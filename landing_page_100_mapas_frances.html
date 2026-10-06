@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>+100 Mapas Mentais para Aprender Francês</title>
+<meta name="description" content="+100 Mapas Mentais para aprender e revisar Francês de forma visual, organizada e prática.">
+<style>
+:root{
+  --bg:#f7f9fc;
+  --card:#ffffff;
+  --text:#101828;
+  --muted:#667085;
+  --blue:#0055a4;
+  --blue-dark:#003f7d;
+  --red:#ef4135;
+  --red-dark:#c92f26;
+  --line:#dfe5ec;
+  --green:#188a57;
+  --shadow:0 18px 50px rgba(54,31,67,.10);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--text);
+  background:linear-gradient(180deg,#f6f9fd 0%,#fff 34%,#f8fafc 100%);
+  line-height:1.55;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1080px,92%);margin:auto}
+.topbar{
+  background:#201b24;color:#fff;text-align:center;padding:10px 15px;
+  font-size:13px;font-weight:700;
+}
+.hero{padding:58px 0 42px;text-align:center}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+.badge{
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:8px 14px;font-size:13px;font-weight:800;color:#4b4350;
+  box-shadow:0 5px 20px rgba(40,20,50,.05)
+}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-2.8px;margin:12px auto 18px;max-width:900px}
+h1 span{background:linear-gradient(90deg,var(--blue),#153e75,var(--red));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:19px;color:var(--muted);max-width:720px;margin:0 auto 26px}
+.cta{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  background:linear-gradient(135deg,var(--blue),var(--blue-dark));
+  color:#fff;padding:17px 30px;border-radius:14px;font-size:17px;font-weight:900;
+  box-shadow:0 14px 30px rgba(0,85,164,.24);transition:.2s;
+}
+.cta:hover{transform:translateY(-2px);filter:brightness(1.03)}
+.trust{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:17px;color:#777;font-size:13px;font-weight:700}
+.section{padding:70px 0}
+.section.alt{background:#fff}
+.kicker{text-align:center;color:var(--pink);font-weight:900;font-size:12px;letter-spacing:1.6px;text-transform:uppercase}
+h2{text-align:center;font-size:clamp(29px,4vw,46px);line-height:1.08;letter-spacing:-1.4px;margin:8px auto 13px}
+.section-lead{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 35px}
+.preview{
+  background:linear-gradient(135deg,#fff,#fff1f8);
+  border:1px solid #f0dce8;border-radius:28px;padding:22px;box-shadow:var(--shadow);
+}
+.preview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.mini-map{
+  min-height:170px;border-radius:20px;padding:20px;background:#fff;border:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.mini-map:before{content:"";position:absolute;width:120px;height:120px;border-radius:50%;background:#f8d9e9;right:-35px;top:-40px}
+.mini-map h3{margin:0 0 12px;font-size:18px;position:relative}
+.node{display:inline-block;background:#faf7fb;border:1px solid #eee4f0;border-radius:9px;padding:6px 9px;margin:3px;font-size:12px;font-weight:700;position:relative}
+.testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.testimonial{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 8px 28px rgba(30,20,40,.05)}
+.stars{color:#f3b31b;letter-spacing:2px}
+.testimonial .tag{font-size:11px;color:var(--purple);font-weight:900;letter-spacing:1px;margin:10px 0}
+.testimonial p{color:#4e4652}
+.person{font-weight:900}.role{font-size:13px;color:#888}
+.levels{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.level{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center}
+.level strong{display:block;font-size:18px}.level span{display:block;color:var(--muted);margin-top:6px;font-weight:700}
+.detail{margin-top:20px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.detail h3{margin-top:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:#eef5fc;border:1px solid #d7e5f4;color:#174d7c;padding:8px 11px;border-radius:10px;font-size:13px;font-weight:750}
+.audiences{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.audience{padding:25px;border-radius:20px;background:#fff;border:1px solid var(--line)}
+.icon{width:42px;height:42px;border-radius:12px;background:#eef5fc;color:var(--blue);display:grid;place-items:center;font-weight:900;margin-bottom:12px}
+.audience h3{margin:0 0 7px}
+.audience p{margin:0;color:var(--muted)}
+.objections{max-width:850px;margin:auto}
+.objection{border-bottom:1px solid var(--line);padding:23px 0}
+.objection strong{display:block;font-size:18px;margin-bottom:7px}
+.objection p{margin:0;color:var(--muted)}
+.bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.bonus{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;gap:17px}
+.bonus-num{flex:0 0 48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#dcecff,#ffe1de);display:grid;place-items:center;font-weight:900;color:#51395e}
+.bonus h3{margin:0 0 6px}.bonus p{margin:0;color:var(--muted);font-size:14px}
+.free{display:inline-block;margin-top:10px;color:var(--green);font-size:12px;font-weight:900}
+.pricing{display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:stretch;max-width:850px;margin:auto}
+.plan{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 35px rgba(30,20,40,.06);position:relative}
+.plan.featured{border:2px solid var(--pink);box-shadow:0 20px 55px rgba(232,62,131,.15)}
+.ribbon{position:absolute;right:18px;top:18px;background:var(--pink);color:#fff;border-radius:999px;padding:6px 10px;font-size:10px;font-weight:900}
+.plan h3{font-size:24px;margin:0 0 8px}.plan .sub{color:var(--muted);font-size:14px}
+.old{text-decoration:line-through;color:#999;font-size:14px;margin-top:22px}.price{font-size:48px;font-weight:950;letter-spacing:-2px}.payment{color:#777;font-size:13px}
+.checks{list-style:none;padding:0;margin:22px 0}.checks li{padding:8px 0;font-size:14px}.checks li:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}.checks li.no:before{content:"✕";color:#aaa}.checks li.no{color:#999}
+.guarantee{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px;text-align:center;max-width:850px;margin:25px auto 0}
+.guarantee-badge{display:inline-grid;place-items:center;width:76px;height:76px;border-radius:50%;background:#ecfff6;color:var(--green);font-size:25px;font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}
+.step-num{font-size:12px;color:var(--pink);font-weight:900}
+.step h3{margin:5px 0}.step p{color:var(--muted);margin:0}
+.faq{max-width:850px;margin:auto}.faq details{background:#fff;border:1px solid var(--line);border-radius:15px;margin:10px 0;padding:17px 20px}.faq summary{cursor:pointer;font-weight:850}.faq p{color:var(--muted);margin:12px 0 0}
+.final{
+  background:linear-gradient(135deg,#261d2a,#43223a);color:#fff;padding:70px 0;text-align:center;
+}
+.final h2{color:#fff}.final p{color:#e8dfe7;max-width:650px;margin:0 auto 25px}
+.urgency{display:inline-block;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);padding:9px 14px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:14px}
+footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:12px}
+
+.offer-badge{
+  background:#fff;
+  border:2px solid var(--red);
+  color:var(--red);
+  padding:10px 18px;
+  box-shadow:0 6px 18px rgba(239,65,53,.10);
+}
+.hero-banner{
+  width:min(900px,100%);
+  margin:25px auto 28px;
+  border-radius:22px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.hero-banner img{display:block;width:100%;height:auto}
+.carousel{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+  border-radius:24px;
+  background:#fff;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+}
+.carousel-track{
+  display:flex;
+  transition:transform .55s ease;
+  will-change:transform;
+}
+.carousel-slide{
+  min-width:100%;
+  aspect-ratio:16/9;
+  background:#fff;
+}
+.carousel-slide img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.carousel-btn{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:44px;height:44px;border:0;border-radius:50%;
+  background:rgba(255,255,255,.94);color:var(--blue);
+  font-size:30px;line-height:1;cursor:pointer;
+  box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+.carousel-btn.prev{left:15px}.carousel-btn.next{right:15px}
+.carousel-dots{
+  position:absolute;left:0;right:0;bottom:14px;
+  display:flex;justify-content:center;gap:7px;
+}
+.dot{
+  width:9px;height:9px;border:0;border-radius:50%;padding:0;
+  background:rgba(255,255,255,.65);cursor:pointer;
+}
+.dot.active{background:var(--red);transform:scale(1.25)}
+.testimonial-photo{
+  width:100%;
+  aspect-ratio:16/10;
+  border-radius:15px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#edf3fa,#fff);
+  border:1px solid var(--line);
+  margin-bottom:17px;
+}
+.testimonial-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.modal-backdrop{
+  position:fixed;inset:0;z-index:1000;
+  background:rgba(8,15,28,.72);
+  display:none;align-items:center;justify-content:center;
+  padding:20px;
+}
+.modal-backdrop.open{display:flex}
+.upsell-modal{
+  width:min(560px,100%);
+  background:#fff;border-radius:25px;padding:34px;
+  position:relative;text-align:center;
+  box-shadow:0 30px 90px rgba(0,0,0,.30);
+  border-top:5px solid var(--red);
+}
+.modal-close{
+  position:absolute;right:15px;top:12px;border:0;background:none;
+  font-size:28px;color:#777;cursor:pointer;
+}
+.modal-kicker{color:var(--red);font-size:12px;font-weight:950;letter-spacing:1.5px}
+.upsell-modal h2{font-size:31px;margin-top:9px}
+.upsell-modal p{color:var(--muted)}
+.upsell-price{margin:20px auto;background:#f5f8fc;border-radius:17px;padding:15px}
+.upsell-price span,.upsell-price small{display:block;color:var(--muted);font-size:12px;font-weight:700}
+.upsell-price strong{display:block;color:var(--blue);font-size:42px;letter-spacing:-1.5px}
+.modal-cta{width:100%}
+.continue-basic{
+  margin-top:15px;background:none;border:0;color:#777;
+  text-decoration:underline;cursor:pointer;font-size:13px;
+}
+
+@media(max-width:800px){
+  .preview-grid,.testimonials,.audiences,.steps{grid-template-columns:1fr}
+  .levels{grid-template-columns:repeat(2,1fr)}
+  .pricing{grid-template-columns:1fr}
+  .bonus-grid{grid-template-columns:1fr}
+  .hero{padding-top:40px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">✨ Condição especial por tempo limitado • Acesso digital imediato</div>
+
+<header class="hero">
+  <div class="container">
+    <div class="badges"><span class="badge offer-badge">OFERTA POR TEMPO LIMITADO!</span></div>
+
+    <h1><span>+100 Mapas Mentais</span><br>para Aprender e Revisar Francês</h1>
+
+    <p>Estude francês com conteúdo visual, organizado e direto ao ponto. Revise pelo celular, tablet ou computador e imprima quando quiser.</p>
+
+    <div class="hero-banner"><img src="bannerfrances.jpg" alt="Banner do produto +100 Mapas Mentais para Aprender Francês"></div>
+
+    <a class="cta" href="#oferta">Quero Garantir Agora →</a>
+
+    <div class="trust">
+      <span>🔒 Compra segura</span>
+      <span>⚡ Acesso imediato</span>
+      <span>✓ Garantia de 30 dias</span>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="kicker">O material por dentro</div>
+    <h2>Veja como é por dentro</h2>
+    <p class="section-lead">Mapas visuais, organizados e prontos para revisar os principais assuntos do francês em poucos minutos.</p>
+
+    <div class="carousel" aria-label="Prévia dos mapas mentais">
+      <div class="carousel-track">
+        <div class="carousel-slide"><img src="carrossel1.jpg" alt="Prévia do mapa mental 1"></div>
+        <div class="carousel-slide"><img src="carrossel2.jpg" alt="Prévia do mapa mental 2"></div>
+        <div class="carousel-slide"><img src="carrossel3.jpg" alt="Prévia do mapa mental 3"></div>
+        <div class="carousel-slide"><img src="carrossel4.jpg" alt="Prévia do mapa mental 4"></div>
+        <div class="carousel-slide"><img src="carrossel5.jpg" alt="Prévia do mapa mental 5"></div>
+        <div class="carousel-slide"><img src="carrossel6.jpg" alt="Prévia do mapa mental 6"></div>
+      </div>
+      <button class="carousel-btn prev" type="button" aria-label="Imagem anterior">‹</button>
+      <button class="carousel-btn next" type="button" aria-label="Próxima imagem">›</button>
+      <div class="carousel-dots">
+        <button class="dot active" type="button" data-slide="0"></button>
+        <button class="dot" type="button" data-slide="1"></button>
+        <button class="dot" type="button" data-slide="2"></button>
+        <button class="dot" type="button" data-slide="3"></button>
+        <button class="dot" type="button" data-slide="4"></button>
+        <button class="dot" type="button" data-slide="5"></button>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:25px"><a class="cta" href="#oferta">Quero Garantir Agora</a></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="kicker">Quem usa</div>
+    <h2>Um material para objetivos diferentes</h2>
+    <p class="section-lead">Aprender para viajar, estudar, trabalhar ou simplesmente finalmente destravar o francês.</p>
+
+    <div class="testimonials">
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-photo"><img src="depoimento1.jpg" alt="Foto do cliente do depoimento 1"></div>
+        <div class="tag">VIAGEM</div>
+        <p>“Eu precisava aprender o básico antes de viajar. Os mapas me ajudaram a revisar vocabulário e frases importantes sem precisar ficar horas estudando.”</p>
+        <div class="person">Marina S.</div><div class="role">Viagem internacional</div>
+      </article>
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-photo"><img src="depoimento2.jpg" alt="Foto do cliente do depoimento 2"></div>
+        <div class="tag">ESTUDOS</div>
+        <p>“O formato visual facilita muito a revisão. Consigo bater o olho no mapa e lembrar rapidamente da estrutura que estava estudando.”</p>
+        <div class="person">Lucas R.</div><div class="role">Estudante</div>
+      </article>
+      <article class="testimonial">
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-photo"><img src="depoimento3.jpg" alt="Foto do cliente do depoimento 3"></div>
+        <div class="tag">PRATICIDADE</div>
+        <p>“Eu não conseguia manter uma rotina de estudos. Com os mapas, consigo revisar um assunto em poucos minutos quando tenho tempo.”</p>
+        <div class="person">Camila F.</div><div class="role">Profissional</div>
+      </article>
+    </div>
+
+    <div style="text-align:center;margin-top:25px"><a class="cta" href="#oferta">Quero Garantir Agora</a></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="kicker">Organização do kit</div>
+    <h2>O que você vai encontrar nos +100 mapas</h2>
+    <p class="section-lead">Conteúdo organizado para levar você dos fundamentos até estruturas mais avançadas, sem precisar estudar de forma desorganizada.</p>
+
+    <div class="levels">
+      <div class="level"><strong>A1 · Base</strong><span>25+ mapas</span></div>
+      <div class="level"><strong>A2 · Expansão</strong><span>25+ mapas</span></div>
+      <div class="level"><strong>B1 · Independência</strong><span>25+ mapas</span></div>
+      <div class="level"><strong>B2 · Refinamento</strong><span>25+ mapas</span></div>
+    </div>
+
+    <div class="detail">
+      <h3>🇫🇷 Principais temas abordados</h3>
+      <div class="pills">
+        <span class="pill">Alfabeto e pronúncia</span><span class="pill">Saudações</span><span class="pill">Apresentações</span>
+        <span class="pill">Pronomes pessoais</span><span class="pill">Artigos e gênero</span><span class="pill">Plural</span>
+        <span class="pill">Números e datas</span><span class="pill">Être e avoir</span><span class="pill">Aller e faire</span>
+        <span class="pill">Verbos essenciais</span><span class="pill">Présent</span><span class="pill">Passé composé</span>
+        <span class="pill">Vocabulário cotidiano</span><span class="pill">Família</span><span class="pill">Comida</span>
+        <span class="pill">Profissões</span><span class="pill">Cidade e transporte</span><span class="pill">Viagem</span>
+        <span class="pill">Clima e emoções</span><span class="pill">Compras</span><span class="pill">Restaurante</span>
+        <span class="pill">Perguntas e respostas</span><span class="pill">Conversação</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="kicker">Para quem é?</div>
+    <h2>Para quem foi feito este material?</h2>
+    <p class="section-lead">Um guia visual para quem quer estudar francês com mais clareza, praticidade e menos tempo perdido.</p>
+
+    <div class="audiences">
+      <div class="audience"><div class="icon">01</div><h3>Para quem está começando</h3><p>Comece pelos fundamentos sem precisar dominar francês antes. O material organiza os primeiros passos de forma visual.</p></div>
+      <div class="audience"><div class="icon">02</div><h3>Para quem tem pouco tempo</h3><p>Revise um assunto em poucos minutos pelo celular, tablet ou computador, encaixando o estudo na sua rotina.</p></div>
+      <div class="audience"><div class="icon">03</div><h3>Para quem quer praticidade</h3><p>Em vez de páginas densas, você encontra informações organizadas visualmente e prontas para revisão.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="kicker">Quebre suas objeções</div>
+    <h2>Talvez você esteja pensando...</h2>
+    <div class="objections">
+      <div class="objection"><strong>“Já tentei aprender francês antes e nunca consegui.”</strong><p>Talvez o problema tenha sido a forma de revisar. Os mapas organizam visualmente conceitos que normalmente ficam espalhados em textos e anotações.</p></div>
+      <div class="objection"><strong>“Não tenho tempo para estudar todos os dias.”</strong><p>Você pode usar os mapas para revisões rápidas, aproveitando pequenos períodos livres ao longo do dia.</p></div>
+      <div class="objection"><strong>“Eu preciso de um curso completo.”</strong><p>Os mapas foram pensados como um material de apoio e revisão. Você pode utilizá-los junto com aulas, cursos, aplicativos ou outros métodos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="kicker">Bônus exclusivos</div>
+    <h2>Você também recebe 5 bônus especiais</h2>
+    <p class="section-lead">Aceleradores de estudo incluídos gratuitamente no Plano Completo.</p>
+
+    <div class="bonus-grid">
+      <div class="bonus"><div class="bonus-num">01</div><div><h3>Leitura Sem Travar</h3><p>Textos progressivos para praticar francês e ganhar mais segurança na leitura.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">02</div><div><h3>Frases na Mão</h3><p>Frases prontas organizadas por situações para consultar quando precisar se comunicar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">03</div><div><h3>Plano Pronto de Estudos</h3><p>Uma sequência prática para saber o que estudar e revisar sem perder tempo decidindo por onde começar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">04</div><div><h3>Verbos Sem Travar</h3><p>Verbos essenciais do francês explicados de forma prática, com exemplos de uso.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">05</div><div><h3>Francês do Dia a Dia</h3><p>Expressões úteis para compreender situações reais e tornar seu francês mais natural.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="oferta">
+  <div class="container">
+    <div class="kicker">Escolha seu plano</div>
+    <h2>Comece hoje sua jornada no francês</h2>
+    <p class="section-lead">Pagamento único, acesso digital e sem mensalidade.</p>
+
+    <div class="pricing">
+      <article class="plan">
+        <h3>Plano Básico</h3>
+        <div class="sub">O essencial para começar</div>
+        <div class="old">De R$ 34,90</div>
+        <div class="price">R$ 17,90</div>
+        <div class="payment">Pagamento único · sem mensalidades</div>
+        <ul class="checks">
+          <li>+100 Mapas Mentais de Francês</li>
+          <li>Organizado do A1 ao B2</li>
+          <li>Acesso digital imediato</li>
+          <li>PDF para estudar e imprimir</li>
+          <li class="no">5 bônus exclusivos</li>
+          <li class="no">Acesso vitalício com atualizações futuras</li>
+        </ul>
+        <a class="cta" style="width:100%" href="#upsell" id="basicCheckoutBtn">Quero o Plano Básico</a>
+        <div style="text-align:center;color:#777;font-size:12px;margin-top:10px">Garantia de 7 dias</div>
+      </article>
+
+      <article class="plan featured">
+        <div class="ribbon">MAIS ESCOLHIDO</div>
+        <h3>Plano Completo</h3>
+        <div class="sub">Tudo para estudar e revisar com mais praticidade</div>
+        <div class="old">De R$ 79,90</div>
+        <div class="price">R$ 32,90</div>
+        <div class="payment">Pagamento único · acesso vitalício</div>
+        <ul class="checks">
+          <li>+100 Mapas Mentais de Francês</li>
+          <li>Organizado do A1 ao B2</li>
+          <li>Acesso digital imediato</li>
+          <li>PDF para estudar e imprimir</li>
+          <li>Leitura Sem Travar</li>
+          <li>Frases na Mão</li>
+          <li>Plano Pronto de Estudos</li>
+          <li>Verbos Sem Travar</li>
+          <li>Francês do Dia a Dia</li>
+          <li>Acesso vitalício com atualizações futuras</li>
+        </ul>
+        <a class="cta" style="width:100%" href="SEU_CHECKOUT_COMPLETO" id="completeCheckoutBtn">Quero o Plano Completo!</a>
+        <div style="text-align:center;color:#777;font-size:12px;margin-top:10px">Garantia de 30 dias</div>
+      </article>
+    </div>
+
+    <div class="guarantee">
+      <div class="guarantee-badge">✓</div>
+      <h2 style="font-size:30px">Risco Zero</h2>
+      <p style="color:var(--muted);max-width:650px;margin:auto">Acesse o material e explore com calma. Se você não ficar satisfeito dentro do prazo de garantia do seu plano, poderá solicitar o reembolso conforme as condições da compra.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="kicker">Entrega imediata</div>
+    <h2>Como você recebe o material?</h2>
+    <p class="section-lead">O envio é 100% digital e automático.</p>
+    <div class="steps">
+      <div class="step"><div class="step-num">PASSO 01</div><h3>Aprovação imediata</h3><p>Após a confirmação do pagamento, seu acesso é liberado.</p></div>
+      <div class="step"><div class="step-num">PASSO 02</div><h3>Acesso por e-mail</h3><p>Você recebe as instruções e o link para acessar seu material digital.</p></div>
+      <div class="step"><div class="step-num">PASSO 03</div><h3>Estude ou imprima</h3><p>Abra no celular, tablet ou computador e imprima quando quiser.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="kicker">Dúvidas frequentes</div>
+    <h2>Perguntas frequentes</h2>
+    <div class="faq">
+      <details><summary>Preciso saber francês para começar?</summary><p>Não. O material começa pelos fundamentos e pode ser utilizado por quem está começando.</p></details>
+      <details><summary>O material é físico?</summary><p>Não. O produto é digital, entregue em formato PDF.</p></details>
+      <details><summary>Posso estudar pelo celular?</summary><p>Sim. Os mapas foram pensados para consulta em celular, tablet e computador.</p></details>
+      <details><summary>Posso imprimir os mapas?</summary><p>Sim. Você pode imprimir o material para estudar de forma física.</p></details>
+      <details><summary>Como recebo o acesso?</summary><p>Após a confirmação do pagamento, você recebe as instruções de acesso por e-mail.</p></details>
+      <details><summary>O pagamento tem mensalidade?</summary><p>Não. A oferta é apresentada como pagamento único.</p></details>
+      <details><summary>Os bônus estão incluídos no Plano Completo?</summary><p>Sim. Os cinco bônus fazem parte do Plano Completo.</p></details>
+      <details><summary>Quanto tempo preciso dedicar por dia?</summary><p>Não existe um tempo obrigatório. Os mapas podem ser usados em revisões rápidas, conforme sua rotina.</p></details>
+      <details><summary>Isso substitui um curso de francês?</summary><p>Não necessariamente. O material funciona principalmente como ferramenta de estudo e revisão e pode complementar outros métodos.</p></details>
+      <details><summary>Tenho garantia se não gostar?</summary><p>Sim. O Plano Básico possui 7 dias de garantia e o Plano Completo possui 30 dias.</p></details>
+    </div>
+  </div>
+</section>
+
+
+<div class="modal-backdrop" id="upsell" aria-hidden="true">
+  <div class="upsell-modal" role="dialog" aria-modal="true" aria-labelledby="upsellTitle">
+    <button class="modal-close" type="button" id="closeUpsell" aria-label="Fechar">×</button>
+    <div class="modal-kicker">OFERTA ESPECIAL</div>
+    <h2 id="upsellTitle">Espere! Você pode levar o Plano Completo por apenas R$ 25,90</h2>
+    <p>Antes de continuar com o Plano Básico, aproveite esta condição especial para ter os +100 Mapas Mentais, os 5 bônus e todos os benefícios do Plano Completo por um valor reduzido.</p>
+    <div class="upsell-price">
+      <span>Condição especial</span>
+      <strong>R$ 25,90</strong>
+      <small>pagamento único</small>
+    </div>
+    <a class="cta modal-cta" href="SEU_CHECKOUT_UPSELL" id="upsellAccept">Sim, quero por R$ 25,90 →</a>
+    <button class="continue-basic" type="button" id="continueBasic">Não, continuar com o Plano Básico por R$ 17,90</button>
+  </div>
+</div>
+
+<section class="final">
+  <div class="container">
+    <div class="urgency">🔥 CONDIÇÃO ESPECIAL POR TEMPO LIMITADO</div>
+    <h2>Garanta seu acesso agora<br>pelo valor especial</h2>
+    <p>Comece a organizar seu estudo de francês com +100 Mapas Mentais e tenha um material visual para revisar sempre que precisar.</p>
+    <a class="cta" href="#oferta">Quero Adquirir Agora →</a>
+    <div style="margin-top:18px;font-size:12px;color:#cbbeca">Pagamento único • Acesso digital • Sem mensalidade</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © 2026 · +100 Mapas Mentais de Francês. Todos os direitos reservados.<br><br>
+    Material digital educacional. A compra deste material não garante nenhum resultado específico de aprendizado.
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  const track = document.querySelector('.carousel-track');
+  const slides = document.querySelectorAll('.carousel-slide');
+  const dots = document.querySelectorAll('.dot');
+  const prev = document.querySelector('.carousel-btn.prev');
+  const next = document.querySelector('.carousel-btn.next');
+  let current = 0;
+  let timer;
+
+  function goTo(index){
+    current = (index + slides.length) % slides.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    dots.forEach((dot,i)=>dot.classList.toggle('active', i === current));
+  }
+  function restart(){
+    clearInterval(timer);
+    timer = setInterval(()=>goTo(current + 1), 2000);
+  }
+  next.addEventListener('click',()=>{goTo(current+1);restart();});
+  prev.addEventListener('click',()=>{goTo(current-1);restart();});
+  dots.forEach(dot=>dot.addEventListener('click',()=>{
+    goTo(Number(dot.dataset.slide));restart();
+  }));
+  restart();
+
+  const modal = document.getElementById('upsell');
+  const basicBtn = document.getElementById('basicCheckoutBtn');
+  const closeBtn = document.getElementById('closeUpsell');
+  const continueBasic = document.getElementById('continueBasic');
+
+  function openModal(e){
+    e.preventDefault();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden','false');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden','true');
+    document.body.style.overflow='';
+  }
+  basicBtn.addEventListener('click', openModal);
+  closeBtn.addEventListener('click', closeModal);
+  continueBasic.addEventListener('click', ()=>{
+    window.location.href='SEU_CHECKOUT_BASICO';
+  });
+  modal.addEventListener('click',(e)=>{
+    if(e.target===modal) closeModal();
+  });
+})();
+</script>
+
+</body>
+</html>
