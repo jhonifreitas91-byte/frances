@@ -120,10 +120,22 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
 
 .offer-badge{
   background:#fff;
-  border:2px solid var(--red);
-  color:var(--red);
-  padding:10px 18px;
-  box-shadow:0 6px 18px rgba(239,65,53,.10);
+  border:1px solid #e6e8ec;
+  color:#667085;
+  padding:9px 16px;
+  box-shadow:0 5px 16px rgba(16,24,40,.06);
+  font-size:13px;
+  font-weight:750;
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+}
+
+.offer-badge .stars-rating{
+  color:#c9a85a;
+  font-size:14px;
+  letter-spacing:1px;
+  opacity:.75;
 }
 .hero-banner{
   width:min(900px,100%);
@@ -240,7 +252,12 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
 
 <header class="hero">
   <div class="container">
-    <div class="badges"><span class="badge offer-badge">⭐⭐⭐⭐⭐  +1.525 alunos</span></div>
+    <div class="badges">
+  <span class="badge offer-badge">
+    <span class="stars-rating">★★★★★</span>
+    <span>+1.525 alunos</span>
+  </span>
+</div>
 
     <h1><span>+100 Mapas Mentais</span><br>para Aprender e Revisar Francês</h1>
 
