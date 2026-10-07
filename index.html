@@ -110,8 +110,35 @@ h2{text-align:center;font-size:clamp(29px,4vw,46px);line-height:1.08;letter-spac
 .free{display:inline-block;margin-top:10px;color:var(--green);font-size:12px;font-weight:900}
 .pricing{display:grid;grid-template-columns:1fr 1.08fr;gap:20px;align-items:stretch;max-width:850px;margin:auto}
 .plan{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 10px 35px rgba(30,20,40,.06);position:relative}
-.plan.featured{border:2px solid var(--pink);box-shadow:0 20px 55px rgba(232,62,131,.15)}
-.ribbon{position:absolute;right:18px;top:18px;background:var(--pink);color:#fff;border-radius:999px;padding:6px 10px;font-size:10px;font-weight:900}
+
+/* PLANO BÁSICO — CONTORNO AZUL */
+.pricing .plan:first-child{
+  border:2px solid var(--blue);
+  box-shadow:0 15px 40px rgba(0,85,164,.12);
+}
+
+/* PLANO COMPLETO — CONTORNO COM AS CORES DA BANDEIRA DA FRANÇA */
+.pricing .plan.featured{
+  border:3px solid transparent;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(90deg,#0055a4 0%,#0055a4 33%,#ffffff 33%,#ffffff 66%,#ef4135 66%,#ef4135 100%) border-box;
+  box-shadow:0 20px 55px rgba(239,65,53,.15);
+}
+
+.ribbon{position:absolute;right:18px;top:18px;background:#ef4135;color:#fff;border-radius:999px;padding:6px 10px;font-size:10px;font-weight:900}
+
+/* BOTÕES DOS PLANOS */
+.pricing .plan:first-child .cta{
+  background:linear-gradient(135deg,#0055a4,#003f7d);
+  box-shadow:0 14px 30px rgba(0,85,164,.24);
+}
+.pricing .plan.featured .cta{
+  background:linear-gradient(135deg,#ef4135,#c92f26);
+  box-shadow:0 14px 30px rgba(239,65,53,.24);
+}
+.pricing .plan:first-child .cta:hover{background:linear-gradient(135deg,#0068c7,#00509e)}
+.pricing .plan.featured .cta:hover{background:linear-gradient(135deg,#f45145,#d9362c)}
 .plan h3{font-size:24px;margin:0 0 8px}.plan .sub{color:var(--muted);font-size:14px}
 .old{text-decoration:line-through;color:#999;font-size:14px;margin-top:22px}.price{font-size:48px;font-weight:950;letter-spacing:-2px}.payment{color:#777;font-size:13px}
 .checks{list-style:none;padding:0;margin:22px 0}.checks li{padding:8px 0;font-size:14px}.checks li:before{content:"✓";color:var(--green);font-weight:900;margin-right:9px}.checks li.no:before{content:"✕";color:#aaa}.checks li.no{color:#999}
