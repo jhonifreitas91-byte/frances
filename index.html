@@ -33,8 +33,18 @@ body{
 a{text-decoration:none;color:inherit}
 .container{width:min(1080px,92%);margin:auto}
 .topbar{
-  background:#201b24;color:#fff;text-align:center;padding:10px 15px;
-  font-size:13px;font-weight:700;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9999;
+  background:#201b24;
+  color:#fff;
+  text-align:center;
+  padding:10px 15px;
+  font-size:13px;
+  font-weight:700;
+  box-shadow:0 4px 18px rgba(0,0,0,.18);
 }
 .hero{padding:48px 0 34px;text-align:center}
 .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
@@ -132,6 +142,98 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
   gap:7px;
 }
 
+
+
+/* Topo fixo + notificação compacta */
+body{
+  padding-top:38px;
+}
+
+.live-notification{
+  position:fixed;
+  left:18px;
+  bottom:18px;
+  z-index:9998;
+  width:min(340px,calc(100vw - 36px));
+  background:rgba(255,255,255,.97);
+  border:1px solid #e1e5ea;
+  border-left:4px solid var(--blue);
+  border-radius:12px;
+  padding:11px 14px;
+  box-shadow:0 10px 30px rgba(16,24,40,.16);
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(15px);
+  transition:opacity .35s ease, transform .35s ease, visibility .35s;
+  pointer-events:none;
+}
+
+.live-notification.show{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+.live-notification-main{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:12px;
+  line-height:1.3;
+  color:#344054;
+}
+
+.live-notification-main > span:last-child{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.live-notification-main strong{
+  color:#101828;
+  font-weight:850;
+}
+
+.live-notification-time{
+  margin-top:3px;
+  font-size:10px;
+  color:#98a2b3;
+  white-space:nowrap;
+}
+
+@media(max-width:600px){
+  body{
+    padding-top:42px;
+  }
+
+  .topbar{
+    padding:10px 8px;
+    font-size:11px;
+  }
+
+  .live-notification{
+    left:10px;
+    bottom:10px;
+    width:calc(100vw - 20px);
+    max-width:none;
+    padding:9px 11px;
+    border-radius:10px;
+  }
+
+  .live-notification-main{
+    font-size:11px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .live-notification-time{
+    font-size:9px;
+  }
+}
 
 /* Identidade visual — azul, branco e vermelho da bandeira francesa */
 .level:nth-child(1), .level:nth-child(3){border-top-color:var(--blue)}
@@ -280,8 +382,21 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
 </style>
 </head>
 <body>
+<div class="topbar">
+  ✨ Condição especial por tempo limitado • Acesso digital imediato
+</div>
 
-<div class="topbar">✨ Condição especial por tempo limitado • Acesso digital imediato</div>
+<!-- Atividade recente — aviso demonstrativo -->
+<div class="live-notification" id="liveNotification" aria-live="polite">
+  <div class="live-notification-main">
+    <span>✅</span>
+    <span><strong id="notificationName">Lívia</strong><span id="notificationAction"> — atividade recente no Plano Completo</span></span>
+  </div>
+  <div class="live-notification-time" id="notificationTime">Há 3 minutos</div>
+</div>
+
+
+
 
 <header class="hero">
   <div class="container">
@@ -615,9 +730,56 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
   continueBasic.addEventListener('click', ()=>{
     window.location.href='SEU_CHECKOUT_BASICO';
   });
+
   modal.addEventListener('click',(e)=>{
     if(e.target===modal) closeModal();
   });
+
+  /* =========================================
+     ATIVIDADE RECENTE — AVISO DEMONSTRATIVO
+     Não apresenta compras fictícias como reais.
+     6s visível → 4s oculto → próximo aviso
+  ========================================= */
+
+  const notificationData = [
+    {name:"Lívia", city:"Salvador", action:"atividade recente no Plano Completo", time:"Há 3 minutos"},
+    {name:"Mariana", city:"São Paulo", action:"atividade recente no Plano Completo", time:"Há 5 minutos"},
+    {name:"Juliana", city:"Curitiba", action:"atividade recente no Plano Completo", time:"Há 7 minutos"},
+    {name:"Camila", city:"Belo Horizonte", action:"atividade recente no Plano Completo", time:"Há 9 minutos"},
+    {name:"Fernanda", city:"Recife", action:"atividade recente no Plano Completo", time:"Há 11 minutos"},
+    {name:"Beatriz", city:"Porto Alegre", action:"atividade recente no Plano Completo", time:"Há 13 minutos"}
+  ];
+
+  const liveNotification = document.getElementById("liveNotification");
+  const notificationName = document.getElementById("notificationName");
+  const notificationAction = document.getElementById("notificationAction");
+  const notificationTime = document.getElementById("notificationTime");
+
+  let notificationIndex = 0;
+
+  function showNotification(){
+    const item = notificationData[notificationIndex];
+
+    notificationName.textContent = item.name + " — " + item.city;
+    notificationAction.textContent = " · " + item.action;
+    notificationTime.textContent = item.time;
+
+    liveNotification.classList.add("show");
+
+    setTimeout(() => {
+      liveNotification.classList.remove("show");
+
+      setTimeout(() => {
+        notificationIndex =
+          (notificationIndex + 1) % notificationData.length;
+
+        showNotification();
+      }, 4000);
+
+    }, 6000);
+  }
+
+  setTimeout(showNotification, 2000);
 })();
 </script>
 
