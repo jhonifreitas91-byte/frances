@@ -28,14 +28,25 @@ body{
   color:var(--text);
   background:linear-gradient(180deg,#f6f9fd 0%,#fff 34%,#f8fafc 100%);
   line-height:1.55;
+  padding-top:38px;
 }
 a{text-decoration:none;color:inherit}
 .container{width:min(1080px,92%);margin:auto}
 .topbar{
-  background:#201b24;color:#fff;text-align:center;padding:10px 15px;
-  font-size:13px;font-weight:700;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:9999;
+  background:#201b24;
+  color:#fff;
+  text-align:center;
+  padding:10px 15px;
+  font-size:13px;
+  font-weight:700;
+  box-shadow:0 4px 18px rgba(0,0,0,.18);
 }
-.hero{padding:58px 0 42px;text-align:center}
+.hero{padding:48px 0 34px;text-align:center}
 .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 .badge{
   background:#fff;border:1px solid var(--line);border-radius:999px;
@@ -53,11 +64,11 @@ h1 span{background:linear-gradient(90deg,var(--blue),#153e75,var(--red));-webkit
 }
 .cta:hover{transform:translateY(-2px);filter:brightness(1.03)}
 .trust{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:17px;color:#777;font-size:13px;font-weight:700}
-.section{padding:70px 0}
+.section{padding:46px 0}
 .section.alt{background:#fff}
 .kicker{text-align:center;color:var(--pink);font-weight:900;font-size:12px;letter-spacing:1.6px;text-transform:uppercase}
 h2{text-align:center;font-size:clamp(29px,4vw,46px);line-height:1.08;letter-spacing:-1.4px;margin:8px auto 13px}
-.section-lead{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 35px}
+.section-lead{text-align:center;color:var(--muted);max-width:700px;margin:0 auto 22px}
 .preview{
   background:linear-gradient(135deg,#fff,#fff1f8);
   border:1px solid #f0dce8;border-radius:28px;padding:22px;box-shadow:var(--shadow);
@@ -297,6 +308,8 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
 }
 
 @media(max-width:600px){
+  body{padding-top:42px}
+  .topbar{padding:10px 8px;font-size:11px}
   .live-notification{
     left:10px;
     bottom:10px;
@@ -313,12 +326,22 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
   .live-notification-time{font-size:9px}
 }
 
+/* Espaçamento mais compacto entre as seções */
+.section + .section{padding-top:40px}
+.section .container > h2{margin-bottom:10px}
+.testimonials .testimonial p{margin:9px 0}
+.audiences .audience p{line-height:1.45}
+.bonus-grid{gap:14px}
+.steps{gap:14px}
+
 @media(max-width:800px){
   .preview-grid,.testimonials,.audiences,.steps{grid-template-columns:1fr}
   .levels{grid-template-columns:repeat(2,1fr)}
   .pricing{grid-template-columns:1fr}
   .bonus-grid{grid-template-columns:1fr}
   .hero{padding-top:40px}
+  .section{padding:38px 0}
+  .section + .section{padding-top:34px}
 }
 </style>
 </head>
