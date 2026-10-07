@@ -104,7 +104,11 @@ h2{text-align:center;font-size:clamp(29px,4vw,46px);line-height:1.08;letter-spac
 .objection strong{display:block;font-size:18px;margin-bottom:7px}
 .objection p{margin:0;color:var(--muted)}
 .bonus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.bonus{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;gap:17px}
+.bonus{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;gap:17px;align-items:flex-start}
+.bonus-content{flex:1;min-width:0}
+.bonus-image{width:100%;max-width:600px;aspect-ratio:600/848;border-radius:14px;overflow:hidden;background:#f7f9fc;border:1px solid var(--line);margin:14px 0 14px}
+.bonus-image img{width:100%;height:100%;display:block;object-fit:cover}
+@media(max-width:800px){.bonus-image{max-width:100%}}
 .bonus-num{flex:0 0 48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#dcecff,#ffe1de);display:grid;place-items:center;font-weight:900;color:#51395e}
 .bonus h3{margin:0 0 6px}.bonus p{margin:0;color:var(--muted);font-size:14px}
 .free{display:inline-block;margin-top:10px;color:var(--green);font-size:12px;font-weight:900}
@@ -523,11 +527,11 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
     <p class="section-lead">Aceleradores de estudo incluídos gratuitamente no Plano Completo.</p>
 
     <div class="bonus-grid">
-      <div class="bonus"><div class="bonus-num">01</div><div><h3>Leitura Sem Travar</h3><p>Textos progressivos para praticar francês e ganhar mais segurança na leitura.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">02</div><div><h3>Frases na Mão</h3><p>Frases prontas organizadas por situações para consultar quando precisar se comunicar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">03</div><div><h3>Plano Pronto de Estudos</h3><p>Uma sequência prática para saber o que estudar e revisar sem perder tempo decidindo por onde começar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">04</div><div><h3>Verbos Sem Travar</h3><p>Verbos essenciais do francês explicados de forma prática, com exemplos de uso.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">05</div><div><h3>Francês do Dia a Dia</h3><p>Expressões úteis para compreender situações reais e tornar seu francês mais natural.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">01</div><div class="bonus-content"><h3>Leitura Sem Travar</h3><div class="bonus-image"><img src="bonus1.jpg" alt="Imagem do bônus Leitura Sem Travar"></div><p>Textos progressivos para praticar francês e ganhar mais segurança na leitura.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">02</div><div class="bonus-content"><h3>Frases na Mão</h3><div class="bonus-image"><img src="bonus2.jpg" alt="Imagem do bônus Frases na Mão"></div><p>Frases prontas organizadas por situações para consultar quando precisar se comunicar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">03</div><div class="bonus-content"><h3>Plano Pronto de Estudos</h3><div class="bonus-image"><img src="bonus3.jpg" alt="Imagem do bônus Plano Pronto de Estudos"></div><p>Uma sequência prática para saber o que estudar e revisar sem perder tempo decidindo por onde começar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">04</div><div class="bonus-content"><h3>Verbos Sem Travar</h3><div class="bonus-image"><img src="bonus4.jpg" alt="Imagem do bônus Verbos Sem Travar"></div><p>Verbos essenciais do francês explicados de forma prática, com exemplos de uso.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      <div class="bonus"><div class="bonus-num">05</div><div class="bonus-content"><h3>Francês do Dia a Dia</h3><div class="bonus-image"><img src="bonus5.jpg" alt="Imagem do bônus Francês do Dia a Dia"></div><p>Expressões úteis para compreender situações reais e tornar seu francês mais natural.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
     </div>
   </div>
 </section>
