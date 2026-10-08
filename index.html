@@ -185,6 +185,42 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
   box-shadow:0 6px 18px rgba(239,65,53,.10);
 }
 
+
+.expert-section{
+  text-align:center;
+  margin:0 auto 44px;
+  max-width:760px;
+}
+.expert-title{
+  margin:0 0 18px;
+  font-size:clamp(24px,4vw,34px);
+  line-height:1.15;
+  font-weight:900;
+  color:var(--text);
+}
+.expert-photo-wrap{
+  width:min(360px,78vw);
+  aspect-ratio:1 / 1;
+  margin:0 auto 22px;
+  border-radius:22px;
+  overflow:hidden;
+  background:#f3f4f6;
+  box-shadow:0 16px 40px rgba(16,24,40,.14);
+}
+.expert-photo-wrap img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.expert-text{
+  margin:0 auto;
+  max-width:720px;
+  font-size:clamp(15px,2vw,18px);
+  line-height:1.7;
+  color:var(--muted);
+}
+
 .hero-video-title{
   margin:22px 0 12px;
   text-align:center;
@@ -491,7 +527,7 @@ body.modal-open .live-notification{
         poster="thumbfrances.jpg"
         aria-label="Vídeo de apresentação do +100 Mapas Mentais para Aprender Francês"
       >
-        <source src="frances.mp4" type="video/mp4">
+        <source src="francesvideo.mp4" type="video/mp4">
         Seu navegador não suporta a reprodução de vídeos.
       </video>
     </div>
@@ -637,6 +673,17 @@ body.modal-open .live-notification{
       <div class="compact-carousel-dots"><button class="compact-dot active" type="button" data-slide="0"></button><button class="compact-dot" type="button" data-slide="1"></button><button class="compact-dot" type="button" data-slide="2"></button><button class="compact-dot" type="button" data-slide="3"></button><button class="compact-dot" type="button" data-slide="4"></button></div>
     </div>
   </div>
+</section>
+
+
+<section class="expert-section">
+  <h2 class="expert-title">Conheça a Prof. Grazi Leal:</h2>
+
+  <div class="expert-photo-wrap">
+    <img src="expert.jpg" alt="Prof. Grazi Leal, especialista por trás do +100 Mapas Mentais para Aprender Francês">
+  </div>
+
+  <p class="expert-text">Apaixonada pelo ensino de francês, a Prof. Grazi Leal acredita que aprender um novo idioma pode ser mais simples, visual e prazeroso quando o conteúdo é organizado de uma maneira fácil de entender e revisar. Foi com esse propósito que criou o <strong>+100 Mapas Mentais para Aprender Francês</strong>, reunindo conteúdos visuais e práticos para ajudar quem está começando, quem já estuda o idioma ou quem sempre teve vontade de aprender francês, mas não sabia por onde começar. Seu objetivo é tornar o aprendizado mais leve, organizado e acessível, ajudando cada pessoa a estudar francês de uma forma que realmente faça sentido para sua rotina. 🇫🇷</p>
 </section>
 
 <section class="section" id="oferta">
