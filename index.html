@@ -262,6 +262,47 @@ footer{padding:30px 0;background:#18141b;color:#aaa;text-align:center;font-size:
 }
 .modal-backdrop.open{display:flex}
 
+
+/* =========================================
+   CARROSSÉIS COMPACTOS — QUEM USA / PARA QUEM É / BÔNUS
+   Navegação manual, setas e loop infinito.
+========================================= */
+.compact-carousel{
+  position:relative;width:min(760px,100%);margin:0 auto;overflow:hidden;border-radius:22px;
+}
+.compact-carousel-track{display:flex;transition:transform .45s ease;will-change:transform}
+.compact-carousel-slide{flex:0 0 100%;min-width:100%}
+.compact-carousel-btn{
+  position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;
+  background:rgba(255,255,255,.97);color:var(--blue);font-size:30px;line-height:1;cursor:pointer;
+  display:grid;place-items:center;box-shadow:0 6px 22px rgba(16,24,40,.16);z-index:3;transition:.15s;
+}
+.compact-carousel-btn:hover{transform:translateY(-50%) scale(1.06);box-shadow:0 8px 25px rgba(16,24,40,.22)}
+.compact-carousel-btn.prev{left:12px}.compact-carousel-btn.next{right:12px}
+.compact-carousel-dots{display:flex;justify-content:center;align-items:center;gap:7px;margin-top:13px}
+.compact-dot{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#cbd5e1;cursor:pointer;transition:.2s}
+.compact-dot.active{background:var(--red);transform:scale(1.35)}
+.testimonials-carousel .testimonial{width:100%;max-width:620px;margin:0 auto;padding:22px 58px}
+.testimonials-carousel .testimonial-photo{aspect-ratio:16/9;max-height:270px}
+.testimonials-carousel .testimonial p{font-size:14px}
+.audiences-carousel .audience{width:100%;max-width:620px;margin:0 auto;min-height:190px;padding:24px 58px}
+.audiences-carousel .icon{margin-left:auto;margin-right:auto}
+.audiences-carousel .audience h3,.audiences-carousel .audience p{text-align:center}
+.bonus-carousel{width:min(700px,100%)}
+.bonus-carousel .bonus{width:100%;min-height:0;padding:22px 58px;display:flex;align-items:flex-start}
+.bonus-carousel .bonus-image{max-width:430px;margin-left:auto;margin-right:auto}
+.bonus-carousel .bonus-content{width:100%}
+@media(max-width:600px){
+  .compact-carousel{border-radius:18px}
+  .compact-carousel-btn{width:38px;height:38px;font-size:26px}
+  .compact-carousel-btn.prev{left:7px}.compact-carousel-btn.next{right:7px}
+  .testimonials-carousel .testimonial{padding:18px 46px 20px}
+  .testimonials-carousel .testimonial-photo{max-height:230px;margin-bottom:13px}
+  .audiences-carousel .audience{min-height:180px;padding:20px 45px}
+  .bonus-carousel .bonus{padding:18px 45px}
+  .bonus-carousel .bonus-image{max-width:330px}
+}
+
 /* Quando o upsell abrir, os elementos fixos da página ficam ocultos para não cobrir o modal. */
 body.modal-open .topbar,
 body.modal-open .live-notification{
@@ -394,10 +435,9 @@ body.modal-open .live-notification{
 .steps{gap:14px}
 
 @media(max-width:800px){
-  .preview-grid,.testimonials,.audiences,.steps{grid-template-columns:1fr}
+  .preview-grid,.steps{grid-template-columns:1fr}
   .levels{grid-template-columns:repeat(2,1fr)}
   .pricing{grid-template-columns:1fr}
-  .bonus-grid{grid-template-columns:1fr}
   .hero{padding-top:40px}
   .section{padding:38px 0}
   .section + .section{padding-top:34px}
@@ -465,28 +505,15 @@ body.modal-open .live-notification{
     <h2>Um material para objetivos diferentes</h2>
     <p class="section-lead">Aprender para viajar, estudar, trabalhar ou simplesmente finalmente destravar o francês.</p>
 
-    <div class="testimonials">
-      <article class="testimonial">
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-photo"><img src="depoimento1.jpg" alt="Foto do cliente do depoimento 1"></div>
-        <div class="tag">VIAGEM</div>
-        <p>“Eu precisava aprender o básico antes de viajar. Os mapas me ajudaram a revisar vocabulário e frases importantes sem precisar ficar horas estudando.”</p>
-        <div class="person">Marina S.</div><div class="role">Viagem internacional</div>
-      </article>
-      <article class="testimonial">
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-photo"><img src="depoimento2.jpg" alt="Foto do cliente do depoimento 2"></div>
-        <div class="tag">ESTUDOS</div>
-        <p>“O formato visual facilita muito a revisão. Consigo bater o olho no mapa e lembrar rapidamente da estrutura que estava estudando.”</p>
-        <div class="person">Lucas R.</div><div class="role">Estudante</div>
-      </article>
-      <article class="testimonial">
-        <div class="stars">★★★★★</div>
-        <div class="testimonial-photo"><img src="depoimento3.jpg" alt="Foto do cliente do depoimento 3"></div>
-        <div class="tag">PRATICIDADE</div>
-        <p>“Eu não conseguia manter uma rotina de estudos. Com os mapas, consigo revisar um assunto em poucos minutos quando tenho tempo.”</p>
-        <div class="person">Camila F.</div><div class="role">Profissional</div>
-      </article>
+    <div class="compact-carousel testimonials-carousel">
+      <div class="compact-carousel-track">
+        <article class="testimonial compact-carousel-slide"><div class="stars">★★★★★</div><div class="testimonial-photo"><img src="depoimento1.jpg" alt="Foto do cliente do depoimento 1"></div><div class="tag">VIAGEM</div><p>“Eu precisava aprender o básico antes de viajar. Os mapas me ajudaram a revisar vocabulário e frases importantes sem precisar ficar horas estudando.”</p><div class="person">Marina S.</div><div class="role">Viagem internacional</div></article>
+        <article class="testimonial compact-carousel-slide"><div class="stars">★★★★★</div><div class="testimonial-photo"><img src="depoimento2.jpg" alt="Foto do cliente do depoimento 2"></div><div class="tag">ESTUDOS</div><p>“O formato visual facilita muito a revisão. Consigo bater o olho no mapa e lembrar rapidamente da estrutura que estava estudando.”</p><div class="person">Lucas R.</div><div class="role">Estudante</div></article>
+        <article class="testimonial compact-carousel-slide"><div class="stars">★★★★★</div><div class="testimonial-photo"><img src="depoimento3.jpg" alt="Foto do cliente do depoimento 3"></div><div class="tag">PRATICIDADE</div><p>“Eu não conseguia manter uma rotina de estudos. Com os mapas, consigo revisar um assunto em poucos minutos quando tenho tempo.”</p><div class="person">Camila F.</div><div class="role">Profissional</div></article>
+      </div>
+      <button class="compact-carousel-btn prev" type="button" aria-label="Avaliação anterior">‹</button>
+      <button class="compact-carousel-btn next" type="button" aria-label="Próxima avaliação">›</button>
+      <div class="compact-carousel-dots"><button class="compact-dot active" type="button" data-slide="0"></button><button class="compact-dot" type="button" data-slide="1"></button><button class="compact-dot" type="button" data-slide="2"></button></div>
     </div>
 
     <div style="text-align:center;margin-top:25px"><a class="cta" href="#oferta">Quero Garantir Agora</a></div>
@@ -528,10 +555,15 @@ body.modal-open .live-notification{
     <h2>Para quem foi feito este material?</h2>
     <p class="section-lead">Um guia visual para quem quer estudar francês com mais clareza, praticidade e menos tempo perdido.</p>
 
-    <div class="audiences">
-      <div class="audience"><div class="icon">01</div><h3>Para quem está começando</h3><p>Comece pelos fundamentos sem precisar dominar francês antes. O material organiza os primeiros passos de forma visual.</p></div>
-      <div class="audience"><div class="icon">02</div><h3>Para quem tem pouco tempo</h3><p>Revise um assunto em poucos minutos pelo celular, tablet ou computador, encaixando o estudo na sua rotina.</p></div>
-      <div class="audience"><div class="icon">03</div><h3>Para quem quer praticidade</h3><p>Em vez de páginas densas, você encontra informações organizadas visualmente e prontas para revisão.</p></div>
+    <div class="compact-carousel audiences-carousel">
+      <div class="compact-carousel-track">
+        <div class="audience compact-carousel-slide"><div class="icon">01</div><h3>Para quem está começando</h3><p>Comece pelos fundamentos sem precisar dominar francês antes. O material organiza os primeiros passos de forma visual.</p></div>
+        <div class="audience compact-carousel-slide"><div class="icon">02</div><h3>Para quem tem pouco tempo</h3><p>Revise um assunto em poucos minutos pelo celular, tablet ou computador, encaixando o estudo na sua rotina.</p></div>
+        <div class="audience compact-carousel-slide"><div class="icon">03</div><h3>Para quem quer praticidade</h3><p>Em vez de páginas densas, você encontra informações organizadas visualmente e prontas para revisão.</p></div>
+      </div>
+      <button class="compact-carousel-btn prev" type="button" aria-label="Item anterior">‹</button>
+      <button class="compact-carousel-btn next" type="button" aria-label="Próximo item">›</button>
+      <div class="compact-carousel-dots"><button class="compact-dot active" type="button" data-slide="0"></button><button class="compact-dot" type="button" data-slide="1"></button><button class="compact-dot" type="button" data-slide="2"></button></div>
     </div>
   </div>
 </section>
@@ -554,12 +586,17 @@ body.modal-open .live-notification{
     <h2>Você também recebe 5 bônus especiais</h2>
     <p class="section-lead">Aceleradores de estudo incluídos gratuitamente no Plano Completo.</p>
 
-    <div class="bonus-grid">
-      <div class="bonus"><div class="bonus-num">01</div><div class="bonus-content"><h3>Leitura Sem Travar</h3><div class="bonus-image"><img src="bonus1.jpg" alt="Imagem do bônus Leitura Sem Travar"></div><p>Textos progressivos para praticar francês e ganhar mais segurança na leitura.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">02</div><div class="bonus-content"><h3>Frases na Mão</h3><div class="bonus-image"><img src="bonus2.jpg" alt="Imagem do bônus Frases na Mão"></div><p>Frases prontas organizadas por situações para consultar quando precisar se comunicar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">03</div><div class="bonus-content"><h3>Plano Pronto de Estudos</h3><div class="bonus-image"><img src="bonus3.jpg" alt="Imagem do bônus Plano Pronto de Estudos"></div><p>Uma sequência prática para saber o que estudar e revisar sem perder tempo decidindo por onde começar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">04</div><div class="bonus-content"><h3>Verbos Sem Travar</h3><div class="bonus-image"><img src="bonus4.jpg" alt="Imagem do bônus Verbos Sem Travar"></div><p>Verbos essenciais do francês explicados de forma prática, com exemplos de uso.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
-      <div class="bonus"><div class="bonus-num">05</div><div class="bonus-content"><h3>Francês do Dia a Dia</h3><div class="bonus-image"><img src="bonus5.jpg" alt="Imagem do bônus Francês do Dia a Dia"></div><p>Expressões úteis para compreender situações reais e tornar seu francês mais natural.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+    <div class="compact-carousel bonus-carousel">
+      <div class="compact-carousel-track">
+        <div class="bonus compact-carousel-slide"><div class="bonus-num">01</div><div class="bonus-content"><h3>Leitura Sem Travar</h3><div class="bonus-image"><img src="bonus1.jpg" alt="Imagem do bônus Leitura Sem Travar"></div><p>Textos progressivos para praticar francês e ganhar mais segurança na leitura.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+        <div class="bonus compact-carousel-slide"><div class="bonus-num">02</div><div class="bonus-content"><h3>Frases na Mão</h3><div class="bonus-image"><img src="bonus2.jpg" alt="Imagem do bônus Frases na Mão"></div><p>Frases prontas organizadas por situações para consultar quando precisar se comunicar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+        <div class="bonus compact-carousel-slide"><div class="bonus-num">03</div><div class="bonus-content"><h3>Plano Pronto de Estudos</h3><div class="bonus-image"><img src="bonus3.jpg" alt="Imagem do bônus Plano Pronto de Estudos"></div><p>Uma sequência prática para saber o que estudar e revisar sem perder tempo decidindo por onde começar.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+        <div class="bonus compact-carousel-slide"><div class="bonus-num">04</div><div class="bonus-content"><h3>Verbos Sem Travar</h3><div class="bonus-image"><img src="bonus4.jpg" alt="Imagem do bônus Verbos Sem Travar"></div><p>Verbos essenciais do francês explicados de forma prática, com exemplos de uso.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+        <div class="bonus compact-carousel-slide"><div class="bonus-num">05</div><div class="bonus-content"><h3>Francês do Dia a Dia</h3><div class="bonus-image"><img src="bonus5.jpg" alt="Imagem do bônus Francês do Dia a Dia"></div><p>Expressões úteis para compreender situações reais e tornar seu francês mais natural.</p><span class="free">GRÁTIS NO PLANO COMPLETO</span></div></div>
+      </div>
+      <button class="compact-carousel-btn prev" type="button" aria-label="Bônus anterior">‹</button>
+      <button class="compact-carousel-btn next" type="button" aria-label="Próximo bônus">›</button>
+      <div class="compact-carousel-dots"><button class="compact-dot active" type="button" data-slide="0"></button><button class="compact-dot" type="button" data-slide="1"></button><button class="compact-dot" type="button" data-slide="2"></button><button class="compact-dot" type="button" data-slide="3"></button><button class="compact-dot" type="button" data-slide="4"></button></div>
     </div>
   </div>
 </section>
@@ -727,6 +764,28 @@ body.modal-open .live-notification{
     goTo(Number(dot.dataset.slide));restart();
   }));
   restart();
+
+
+  /* CARROSSÉIS COMPACTOS — MANUAIS E COM LOOP */
+  document.querySelectorAll('.compact-carousel').forEach(carousel => {
+    const track = carousel.querySelector('.compact-carousel-track');
+    const slides = carousel.querySelectorAll('.compact-carousel-slide');
+    const prev = carousel.querySelector('.compact-carousel-btn.prev');
+    const next = carousel.querySelector('.compact-carousel-btn.next');
+    const dots = carousel.querySelectorAll('.compact-dot');
+    let current = 0;
+
+    function goTo(index){
+      current = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    }
+
+    prev.addEventListener('click', () => goTo(current - 1));
+    next.addEventListener('click', () => goTo(current + 1));
+    dots.forEach(dot => dot.addEventListener('click', () => goTo(Number(dot.dataset.slide))));
+    goTo(0);
+  });
 
   const modal = document.getElementById('upsell');
   const basicBtn = document.getElementById('basicCheckoutBtn');
