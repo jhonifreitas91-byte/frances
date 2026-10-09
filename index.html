@@ -2051,6 +2051,21 @@ a{
   .plan{padding:20px 13px}
   .bonus-carousel .bonus{padding-left:34px;padding-right:34px}
 }
+
+/* REFORMULAÇÃO DA OFERTA: clareza de valor e uso prático */
+.practical-section{background:linear-gradient(135deg,#f4f8ff 0%,#fff 58%,#fff5f4 100%)}
+.practical-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 18px}
+.practical-card{background:#fff;border:1px solid #dfe5ec;border-radius:18px;padding:22px;box-shadow:0 10px 26px rgba(0,63,125,.06)}
+.practical-number{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:#0055a4;color:#fff;font-weight:900;margin-bottom:12px}
+.practical-card:nth-child(2) .practical-number{background:#ef4135}
+.practical-card h3{font-size:18px;line-height:1.25;margin:0 0 9px;color:#003f7d}
+.practical-card p{font-size:14px;line-height:1.65;color:#475467;margin:0}
+.practical-note{background:#fff;border-left:4px solid #ef4135;border-radius:12px;padding:16px 18px;color:#475467;font-size:14px;line-height:1.65}
+.practical-cta{text-align:center;margin-top:22px}
+.plan .sub{line-height:1.5}
+.plan-difference{font-size:13px;line-height:1.5;color:#003f7d;background:#edf5ff;border-radius:10px;padding:10px 12px;margin:12px 0 4px;font-weight:700}
+.plan.featured{transform:translateY(-4px)}
+@media(max-width:760px){.practical-grid{grid-template-columns:1fr;gap:11px}.practical-card{padding:17px}.practical-card h3{font-size:17px}.plan.featured{transform:none}.practical-cta .cta{max-width:100%;white-space:normal}}
 </style>
 
 </head>
@@ -2058,7 +2073,7 @@ a{
 <body>
 
 <div class="topbar">
-  🇫🇷 Aprenda e revise francês com mapas mentais • Acesso digital
+  🇫🇷 Material digital de apoio para estudar e revisar francês • Pagamento único
 </div>
 
 <header class="hero">
@@ -2066,23 +2081,23 @@ a{
     <div class="badges">
       <span class="badge offer-badge">🇫🇷 UM JEITO MAIS VISUAL DE ESTUDAR FRANCÊS</span>
     </div>
-    <h1><span>Aprender francês não precisa ser uma bagunça.</span><br>Organize seus estudos com +100 Mapas Mentais</h1>
-    <p class="hero-subcopy">Tenha os principais conteúdos do francês reunidos em mapas visuais para consultar, entender e revisar com mais clareza — mesmo que você esteja começando agora.</p>
+    <h1><span>+100 MAPAS MENTAIS PARA APRENDER FRANCÊS</span><br>Entenda os conteúdos, organize a revisão e saiba por onde retomar seus estudos.</h1>
+    <p class="hero-subcopy">Um material visual para consultar os principais assuntos do francês sem precisar procurar suas anotações em vários lugares. Use para começar pelos fundamentos ou para revisar temas que você já estudou — no seu ritmo e junto da sua prática.</p>
     <div class="hero-points">
-      <span>✓ Conteúdo visual e organizado</span>
-      <span>✓ Do A1 ao B2, conforme o material</span>
-      <span>✓ Estude em tela ou imprima</span>
+      <span>✓ Mais de 100 mapas mentais</span>
+      <span>✓ Conteúdos do A1 ao B2, conforme o material</span>
+      <span>✓ PDF para consultar ou imprimir</span>
     </div>
-    <h2 class="hero-video-title">Veja o material e entenda como ele funciona</h2>
+    <h2 class="hero-video-title">Assista à apresentação e veja o material por dentro</h2>
     <div class="hero-video">
       <video controls playsinline preload="metadata" poster="thumbfrances.jpg" aria-label="Vídeo de apresentação do +100 Mapas Mentais para Aprender Francês">
-        <source src="frances.mp4" type="video/mp4">
+        <source src="francesvideo.mp4" type="video/mp4">
         Seu navegador não suporta a reprodução de vídeos.
       </video>
     </div>
-    <a class="cta" href="#oferta">Quero estudar francês com mais organização ↓</a>
+    <a class="cta" href="#oferta">Ver o conteúdo e comparar os planos ↓</a>
     <div class="trust"><span>🔒 Pagamento seguro pelo checkout</span><span>⚡ Acesso digital após a confirmação</span><span>✓ Consulte a garantia do plano</span></div>
-    <p class="hero-note">Material de apoio e revisão. Não é uma promessa de fluência instantânea nem substitui toda a prática de um idioma.</p>
+    <p class="hero-note">Importante: este é um material de apoio e revisão. Ele não promete fluência sozinho e não substitui prática de leitura, escuta, escrita e conversação.</p>
   </div>
 </header>
 
@@ -2097,13 +2112,10 @@ a{
       O material por dentro
     </div>
 
-    <h2>
-      Veja como é por dentro
-    </h2>
+    <h2>Veja o que você realmente vai receber</h2>
 
     <p class="section-lead">
-      Mapas visuais, organizados e prontos para revisar os principais assuntos
-      do francês em poucos minutos.
+      Confira as páginas de exemplo antes de escolher. Os mapas reúnem conteúdos de francês em formato visual para facilitar a consulta, a retomada dos assuntos e a revisão.
     </p>
 
     <div class="carousel" aria-label="Prévia dos mapas mentais">
@@ -2172,14 +2184,32 @@ a{
 <section class="section alt">
   <div class="container">
     <div class="kicker">Por que mapas mentais?</div>
-    <h2>Menos conteúdo espalhado. Mais clareza para revisar.</h2>
-    <p class="section-lead">Quando você estuda um idioma, é fácil acumular anotações e perder tempo procurando o que precisa revisar. Os mapas mentais ajudam a reunir informações relacionadas em uma estrutura visual.</p>
+    <h2>O problema não é só estudar. É conseguir retomar o conteúdo depois.</h2>
+    <p class="section-lead">Aulas, cadernos, vídeos e aplicativos podem deixar informações importantes espalhadas. A proposta deste material é reunir temas de francês em páginas visuais que você consegue abrir de novo quando precisar revisar — sem vender a ideia de que olhar um mapa, sozinho, ensina um idioma inteiro.</p>
     <div class="audiences">
-      <article class="audience"><div class="icon">01</div><h3>Enxergue as relações</h3><p>Consulte os assuntos de forma visual, com informações organizadas para facilitar a revisão.</p></article>
-      <article class="audience"><div class="icon">02</div><h3>Retome o estudo com facilidade</h3><p>Use os mapas como material de consulta ao longo da sua rotina, no tempo que tiver disponível.</p></article>
-      <article class="audience"><div class="icon">03</div><h3>Tenha um apoio para estudar</h3><p>Combine o material com aulas, exercícios, aplicativos e prática de leitura, escuta e conversação.</p></article>
+      <article class="audience"><div class="icon">01</div><h3>Consulte o tema de uma vez</h3><p>Veja as informações reunidas em uma página visual, em vez de ter que reconstruir suas anotações toda vez que for revisar.</p></article>
+      <article class="audience"><div class="icon">02</div><h3>Retome de onde parou</h3><p>Volte ao mapa de um assunto que já estudou para relembrar os pontos principais antes de fazer exercícios ou praticar.</p></article>
+      <article class="audience"><div class="icon">03</div><h3>Complemente sua prática</h3><p>Use os mapas junto com aulas, exercícios, áudio, leitura e conversação. Eles organizam a consulta; a prática é o que transforma estudo em habilidade.</p></article>
     </div>
     <div style="text-align:center;margin-top:25px"><a class="cta" href="#oferta">Ver planos e conteúdos →</a></div>
+  </div>
+</section>
+
+<!-- =========================
+     COMO USAR NA PRÁTICA
+========================= -->
+<section class="section practical-section">
+  <div class="container">
+    <div class="kicker">Como usar no dia a dia</div>
+    <h2>Um jeito simples de transformar consulta em estudo</h2>
+    <p class="section-lead">O mapa é um ponto de partida para revisar, não um atalho mágico. Use-o em conjunto com prática ativa para aproveitar melhor o material.</p>
+    <div class="practical-grid">
+      <article class="practical-card"><span class="practical-number">01</span><h3>Escolha um único assunto</h3><p>Abra um mapa do tema que você está estudando ou que precisa relembrar. Evite tentar revisar tudo de uma vez.</p></article>
+      <article class="practical-card"><span class="practical-number">02</span><h3>Leia e tente recordar</h3><p>Observe o mapa, depois tente explicar com suas palavras o que entendeu ou recordar os exemplos sem olhar.</p></article>
+      <article class="practical-card"><span class="practical-number">03</span><h3>Pratique e volte depois</h3><p>Faça exercícios, leia ou escute francês relacionado ao tema. Retorne ao mapa quando precisar conferir ou revisar.</p></article>
+    </div>
+    <div class="practical-note"><strong>O que este produto entrega:</strong> um material visual de consulta e revisão. <strong>O que ele não promete:</strong> fluência automática, resultados iguais para todos ou substituição da prática do idioma.</div>
+    <div class="practical-cta"><a class="cta" href="#oferta">Comparar os planos e ver o que está incluído →</a></div>
   </div>
 </section>
 
@@ -2195,13 +2225,10 @@ a{
       Organização do kit
     </div>
 
-    <h2>
-      O que você vai encontrar nos +100 mapas
-    </h2>
+    <h2>Um panorama dos assuntos para você saber o que revisar</h2>
 
     <p class="section-lead">
-      Conteúdo organizado para levar você dos fundamentos até estruturas
-      mais avançadas, sem precisar estudar de forma desorganizada.
+      O material está organizado por níveis e reúne temas de gramática, vocabulário e comunicação. Use esta lista para conferir se os assuntos fazem sentido para o ponto em que você está no francês.
     </p>
 
     <div class="levels">
@@ -2280,13 +2307,10 @@ a{
       Para quem é?
     </div>
 
-    <h2>
-      Para quem foi feito este material?
-    </h2>
+    <h2>Um apoio visual para diferentes momentos do estudo</h2>
 
     <p class="section-lead">
-      Um guia visual para quem quer estudar francês com mais clareza,
-      praticidade e menos tempo perdido.
+      Você pode estar começando, já fazer aulas ou ter parado de estudar e querer retomar. O material serve como apoio de consulta e revisão — não exige que você já domine o idioma.
     </p>
 
     <div class="compact-carousel audiences-carousel">
@@ -2398,48 +2422,40 @@ a{
 
   <div class="container">
 
-    <div class="kicker">
-      Quebre suas objeções
+    <div class="kicker">Antes de escolher
     </div>
 
-    <h2>
-      Talvez você esteja pensando...
-    </h2>
+    <h2>Veja se este material combina com o que você precisa</h2>
 
     <div class="objections">
 
       <div class="objection">
         <strong>
-          “Já tentei aprender francês antes e nunca consegui.”
+          “Tenho dificuldade para organizar tudo o que estudo.”
         </strong>
 
         <p>
-          Talvez o problema tenha sido a forma de revisar.
-          Os mapas organizam visualmente conceitos que normalmente ficam
-          espalhados em textos e anotações.
+          Os mapas oferecem uma forma visual de consultar os temas estudados. Eles podem ajudar na organização da revisão, mas o progresso também depende de prática regular e de um método adequado para você.
         </p>
       </div>
 
       <div class="objection">
         <strong>
-          “Não tenho tempo para estudar todos os dias.”
+          “Minha rotina é corrida.”
         </strong>
 
         <p>
-          Você pode usar os mapas para revisões rápidas,
-          aproveitando pequenos períodos livres ao longo do dia.
+          Você pode abrir um mapa quando tiver alguns minutos disponíveis. Não existe tempo mágico: escolha um tema, revise e, quando puder, complemente com exercícios ou prática do idioma.
         </p>
       </div>
 
       <div class="objection">
         <strong>
-          “Eu preciso de um curso completo.”
+          “Isso vai me deixar fluente sem fazer mais nada?”
         </strong>
 
         <p>
-          Os mapas foram pensados como um material de apoio e revisão.
-          Você pode utilizá-los junto com aulas, cursos, aplicativos
-          ou outros métodos.
+          Não. O produto é um material visual de apoio e revisão, não um curso completo com acompanhamento nem uma promessa de fluência. Para desenvolver o idioma, combine a consulta com escuta, leitura, escrita e conversação.
         </p>
       </div>
 
@@ -2461,12 +2477,10 @@ a{
       Bônus exclusivos
     </div>
 
-    <h2>
-      Você também recebe 5 bônus especiais
-    </h2>
+    <h2>No Plano Completo, a revisão vem acompanhada de 5 materiais extras</h2>
 
     <p class="section-lead">
-      Aceleradores de estudo incluídos gratuitamente no Plano Completo.
+      Cada bônus tem uma função diferente: leitura, frases úteis, organização da rotina, verbos e expressões do dia a dia. Veja as prévias e escolha o plano pelo tipo de apoio que você quer ter.
     </p>
 
     <div class="compact-carousel bonus-carousel">
@@ -2697,9 +2711,7 @@ a{
 
 <section class="expert-section">
 
-  <h2 class="expert-title">
-    Conheça a Prof. Grazi Leal:
-  </h2>
+  <h2 class="expert-title">Conheça a Prof. Grazi Leal</h2>
 
   <div class="expert-photo-wrap">
 
@@ -2733,9 +2745,9 @@ a{
 
   <div class="container">
 
-    <div class="kicker">Escolha sua versão</div>
-    <h2>Escolha o material que combina com seu momento</h2>
-    <p class="section-lead">Compare o que está incluído em cada plano. Ambos são digitais e têm pagamento único, sem mensalidade.</p>
+    <div class="kicker">Escolha com clareza</div>
+    <h2>Escolha o nível de apoio que faz sentido para você</h2>
+    <p class="section-lead">O Plano Básico entrega os mapas mentais. O Plano Completo inclui os mesmos mapas mais cinco materiais complementares. Compare antes de comprar: pagamento único, sem mensalidade.</p>
 
     <div class="pricing">
 
@@ -2747,7 +2759,7 @@ a{
           Plano Básico
         </h3>
 
-        <div class="sub">Para quem quer os mapas mentais como material principal de consulta</div>
+        <div class="sub">Para quem quer o material principal de consulta e revisão</div>
 
         
 
@@ -2807,14 +2819,15 @@ a{
       <article class="plan featured">
 
         <div class="ribbon">
-          MAIS COMPLETO
+          MAPAS + 5 EXTRAS
         </div>
 
         <h3>
           Plano Completo
         </h3>
 
-        <div class="sub">Mapas mentais + cinco materiais complementares</div>
+        <div class="sub">Os mapas mentais + 5 materiais para apoiar outras partes do estudo</div>
+        <p class="plan-difference">Por R$ 15,00 a mais que o Básico, você inclui os cinco materiais complementares.</p>
 
         
 
@@ -2823,7 +2836,7 @@ a{
         </div>
 
         <div class="payment">
-          Pagamento único · acesso vitalício
+          Pagamento único · sem mensalidade
         </div>
 
         <ul class="checks">
@@ -2893,14 +2906,10 @@ a{
         ✓
       </div>
 
-      <h2 style="font-size:30px">
-        Risco Zero
-      </h2>
+      <h2 style="font-size:30px">Confira a garantia do seu plano</h2>
 
       <p style="color:var(--muted);max-width:650px;margin:auto">
-        Acesse o material e explore com calma. Se você não ficar satisfeito
-        dentro do prazo de garantia do seu plano, poderá solicitar o reembolso
-        conforme as condições da compra.
+        O Plano Básico informa garantia de 7 dias e o Plano Completo, de 30 dias, conforme as condições do checkout. Leia as regras apresentadas na compra para entender como solicitar o reembolso.
       </p>
 
     </div>
@@ -2921,9 +2930,7 @@ a{
       Entrega imediata
     </div>
 
-    <h2>
-      Como você recebe o material?
-    </h2>
+    <h2>Da compra ao primeiro estudo: como funciona</h2>
 
     <p class="section-lead">
       O envio é 100% digital e automático.
@@ -2997,9 +3004,7 @@ a{
       Dúvidas frequentes
     </div>
 
-    <h2>
-      Perguntas frequentes
-    </h2>
+    <h2>Tire suas dúvidas antes de comprar</h2>
 
     <div class="faq">
 
@@ -3114,8 +3119,8 @@ a{
   <div class="container">
 
     <div class="urgency">SEU PRÓXIMO PASSO NO FRANCÊS</div>
-    <h2>Tenha um material visual para consultar sempre que estudar</h2>
-    <p>Escolha seu plano, confira os detalhes no checkout e comece a usar os mapas mentais como apoio para organizar e revisar seus estudos de francês.</p>
+    <h2>Deixe seus estudos de francês mais fáceis de retomar</h2>
+    <p>Veja as páginas de exemplo, compare o Plano Básico com o Completo e escolha o material que faz sentido para a sua rotina. Use os mapas para consultar e revisar — e continue praticando o francês além deles.</p>
 
     <a class="cta" href="#oferta">
       Comparar os planos →
@@ -3297,7 +3302,7 @@ a{
 </script>
 
 
-<div class="mobile-offer-bar"><span><strong>+100 Mapas Mentais</strong><small>Escolha seu plano</small></span><a href="#oferta">Ver oferta ↓</a></div>
+<div class="mobile-offer-bar"><span><strong>+100 Mapas Mentais para Francês</strong><small>Compare os planos</small></span><a href="#oferta">Ver oferta ↓</a></div>
 <style>.mobile-offer-bar{display:none}@media(max-width:600px){.mobile-offer-bar{position:fixed;z-index:9997;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #dfe5ec;box-shadow:0 -5px 22px rgba(16,24,40,.10)}.mobile-offer-bar span{display:flex;flex-direction:column;font-size:12px;line-height:1.25}.mobile-offer-bar small{color:#667085;margin-top:3px}.mobile-offer-bar a{background:#ef4135;color:#fff;font-weight:900;padding:11px 15px;border-radius:11px;font-size:13px}body{padding-bottom:75px}}</style>
 
 </body>
