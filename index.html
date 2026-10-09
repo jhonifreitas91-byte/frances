@@ -25,7 +25,7 @@ fbq('track', 'PageView');
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>+100 Mapas Mentais para Aprender Francês</title>
-<meta name="description" content="Organize seus estudos de francês com +100 mapas mentais visuais para consultar e revisar conteúdos. Material digital para iniciantes e estudantes.">
+<meta name="description" content="+100 Mapas Mentais para aprender e revisar Francês de forma visual, organizada e prática.">
 
 <style>
 :root{
@@ -112,12 +112,6 @@ button{
   color:#4b4350;
   box-shadow:0 5px 20px rgba(40,20,50,.05);
 }
-
-.hero-subcopy{font-size:clamp(18px,2.2vw,22px)!important;color:#344054!important;max-width:800px!important;line-height:1.5;margin:0 auto 20px!important}
-.hero-points{display:flex;justify-content:center;gap:10px 18px;flex-wrap:wrap;margin:0 auto 20px;color:#344054;font-size:14px;font-weight:750}
-.hero-points span{background:#fff;border:1px solid #dfe5ec;border-radius:999px;padding:8px 12px}
-.hero-note{font-size:12px!important;max-width:650px!important;margin:15px auto 0!important;color:#7b8492!important}
-.offer-badge{border-color:#c8d9eb;color:#174d7c;background:#f8fbff}
 
 h1{
   font-size:clamp(38px,6vw,68px);
@@ -913,13 +907,13 @@ footer{
 }
 
 .expert-text{
-  width:min(620px,100%);
-  max-width:620px;
+  width:min(360px,78vw);
+  max-width:360px;
   margin:0 auto;
   font-size:15px;
-  line-height:1.7;
+  line-height:1.65;
   color:var(--muted);
-  text-align:center;
+  text-align:left;
   text-wrap:pretty;
 }
 
@@ -1578,528 +1572,62 @@ body.modal-open .live-notification{
     font-size:9px;
   }
 }
-
-
-/* AJUSTES DE RESPONSIVIDADE — CELULAR E TABLET */
-html,
-body{
-  width:100%;
-  max-width:100%;
-  overflow-x:clip;
-}
-
-body{
-  min-width:0;
-}
-
-img,
-video,
-iframe,
-svg{
-  max-width:100%;
-}
-
-.container,
-header,
-section,
-footer,
-.preview,
-.carousel,
-.compact-carousel,
-.pricing,
-.plan,
-.detail,
-.guarantee,
-.expert-section{
-  min-width:0;
-  max-width:100%;
-}
-
-.container > *,
-.preview-grid > *,
-.levels > *,
-.audiences > *,
-.steps > *,
-.bonus-grid > *,
-.pricing > *{
-  min-width:0;
-}
-
-p,
-h1,
-h2,
-h3,
-span,
-strong,
-li,
-a{
-  overflow-wrap:anywhere;
-}
-
-@media (max-width: 800px){
-  .container{
-    width:calc(100% - 36px);
-    max-width:680px;
-  }
-
-  .preview-grid,
-  .steps,
-  .audiences,
-  .bonus-grid,
-  .pricing{
-    grid-template-columns:minmax(0,1fr);
-  }
-
-  .levels{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-  }
-
-  .hero-banner,
-  .preview,
-  .detail,
-  .guarantee,
-  .plan,
-  .audience,
-  .step,
-  .bonus{
-    max-width:100%;
-  }
-}
-
-@media (max-width: 600px){
-  html{
-    scroll-padding-top:56px;
-  }
-
-  body{
-    padding-top:42px;
-    padding-bottom:86px;
-    font-size:15px;
-  }
-
-  .container{
-    width:calc(100% - 30px);
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .topbar{
-    padding:9px 10px;
-    font-size:11px;
-    line-height:1.35;
-  }
-
-  .hero{
-    padding:28px 0 24px;
-  }
-
-  .badges{
-    margin-bottom:13px;
-    padding:0 2px;
-  }
-
-  .badge,
-  .offer-badge{
-    max-width:100%;
-    white-space:normal;
-    text-align:center;
-    justify-content:center;
-    font-size:11px;
-    line-height:1.35;
-    padding:8px 11px;
-  }
-
-  h1{
-    max-width:100%;
-    font-size:clamp(31px,8.6vw,43px);
-    line-height:1.08;
-    letter-spacing:-1.25px;
-    margin:10px auto 15px;
-    padding:0 1px;
-  }
-
-  h2{
-    font-size:clamp(25px,7vw,33px);
-    line-height:1.13;
-    letter-spacing:-.7px;
-    padding:0 2px;
-  }
-
-  h3{
-    font-size:19px;
-    line-height:1.25;
-  }
-
-  .hero-subcopy,
-  .hero p{
-    font-size:16px !important;
-    line-height:1.55;
-    margin-left:auto !important;
-    margin-right:auto !important;
-  }
-
-  .hero-points{
-    display:grid;
-    grid-template-columns:minmax(0,1fr);
-    gap:8px;
-    width:100%;
-    font-size:13px;
-  }
-
-  .hero-points span{
-    width:100%;
-    text-align:center;
-    padding:9px 10px;
-  }
-
-  .hero-video-title{
-    font-size:22px;
-    padding:0 5px;
-    margin-top:20px;
-  }
-
-  .hero-video{
-    width:min(100%,300px);
-    border-radius:16px;
-  }
-
-  .cta{
-    display:flex;
-    width:100%;
-    max-width:100%;
-    padding:15px 16px;
-    font-size:15px;
-    line-height:1.35;
-    text-align:center;
-    white-space:normal;
-    border-radius:12px;
-  }
-
-  .trust{
-    display:grid;
-    grid-template-columns:minmax(0,1fr);
-    gap:7px;
-    font-size:12px;
-  }
-
-  .hero-note{
-    padding:0 3px;
-    line-height:1.5;
-  }
-
-  .section,
-  .section + .section{
-    padding:30px 0;
-  }
-
-  .section-lead{
-    font-size:14px;
-    line-height:1.55;
-    margin-bottom:18px;
-    padding:0 2px;
-  }
-
-  .preview{
-    padding:10px;
-    border-radius:17px;
-  }
-
-  .carousel{
-    border-radius:15px;
-  }
-
-  .carousel-btn{
-    width:34px;
-    height:34px;
-    font-size:24px;
-  }
-
-  .carousel-btn.prev{left:7px}
-  .carousel-btn.next{right:7px}
-
-  .carousel-dots{
-    bottom:9px;
-    gap:6px;
-  }
-
-  .dot{
-    width:8px;
-    height:8px;
-  }
-
-  .levels{
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:9px;
-  }
-
-  .level{
-    padding:16px 8px;
-    border-radius:14px;
-  }
-
-  .level strong{
-    font-size:15px;
-    overflow-wrap:normal;
-  }
-
-  .level span{
-    font-size:12px;
-  }
-
-  .detail{
-    padding:18px 14px;
-    border-radius:16px;
-  }
-
-  .pills{
-    gap:6px;
-  }
-
-  .pill{
-    font-size:12px;
-    padding:7px 9px;
-    max-width:100%;
-  }
-
-  .audience,
-  .step{
-    padding:19px 16px;
-    border-radius:16px;
-  }
-
-  .compact-carousel{
-    width:100%;
-    border-radius:16px;
-  }
-
-  .compact-carousel-btn{
-    width:32px;
-    height:32px;
-    font-size:23px;
-  }
-
-  .compact-carousel-btn.prev{left:5px}
-  .compact-carousel-btn.next{right:5px}
-
-  .audiences-carousel .audience{
-    padding:20px 38px;
-    min-height:0;
-  }
-
-  .bonus-carousel .bonus{
-    padding:17px 37px;
-    gap:9px;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-  }
-
-  .bonus-num{
-    flex:0 0 38px;
-    width:38px;
-    height:38px;
-    border-radius:11px;
-  }
-
-  .bonus-carousel .bonus-content{
-    width:100%;
-    min-width:0;
-  }
-
-  .bonus-carousel .bonus h3,
-  .bonus-carousel .bonus p{
-    text-align:center;
-  }
-
-  .bonus-carousel .bonus-image{
-    width:100%;
-    max-width:260px;
-    margin:12px auto;
-  }
-
-  .objections{
-    width:100%;
-  }
-
-  .objection{
-    padding:18px 0;
-  }
-
-  .objection strong{
-    font-size:16px;
-    line-height:1.4;
-  }
-
-  .objection p{
-    font-size:14px;
-    line-height:1.55;
-  }
-
-  .expert-section{
-    width:100%;
-    margin-bottom:30px;
-    padding:0 2px;
-  }
-
-  .expert-title{
-    font-size:25px;
-    line-height:1.2;
-  }
-
-  .expert-photo-wrap{
-    width:min(78vw,300px);
-    border-radius:17px;
-  }
-
-  .expert-text{
-    width:100%;
-    max-width:620px;
-    font-size:14px;
-    line-height:1.65;
-    text-align:center;
-    margin-left:auto;
-    margin-right:auto;
-  }
-
-  .pricing{
-    width:100%;
-    grid-template-columns:minmax(0,1fr);
-    gap:16px;
-  }
-
-  .plan{
-    width:100%;
-    padding:22px 17px;
-    border-radius:18px;
-  }
-
-  .plan h3{
-    font-size:22px;
-    padding-right:0;
-  }
-
-  .ribbon{
-    position:static;
-    display:inline-block;
-    margin:0 0 12px;
-    max-width:100%;
-  }
-
-  .price{
-    font-size:clamp(39px,11vw,48px);
-    letter-spacing:-1.5px;
-  }
-
-  .checks li{
-    font-size:13px;
-    line-height:1.45;
-  }
-
-  .guarantee{
-    padding:22px 15px;
-    border-radius:18px;
-  }
-
-  .guarantee-badge{
-    width:62px;
-    height:62px;
-  }
-
-  .faq details{
-    padding:15px 13px;
-  }
-
-  .faq summary{
-    font-size:14px;
-    line-height:1.45;
-  }
-
-  .faq p{
-    font-size:14px;
-    line-height:1.55;
-  }
-
-  .final{
-    padding:42px 0;
-  }
-
-  footer{
-    padding:24px 0 32px;
-  }
-
-  .mobile-offer-bar{
-    gap:8px;
-    padding:9px 12px calc(9px + env(safe-area-inset-bottom));
-  }
-
-  .mobile-offer-bar span{
-    min-width:0;
-    font-size:11px;
-  }
-
-  .mobile-offer-bar a{
-    flex:0 0 auto;
-    padding:11px 13px;
-    font-size:12px;
-  }
-}
-
-@media (max-width: 360px){
-  .container{width:calc(100% - 24px)}
-  h1{font-size:30px;letter-spacing:-1px}
-  .levels{gap:7px}
-  .level{padding:14px 5px}
-  .level strong{font-size:14px}
-  .plan{padding:20px 13px}
-  .bonus-carousel .bonus{padding-left:34px;padding-right:34px}
-}
-
-/* REFORMULAÇÃO DA OFERTA: clareza de valor e uso prático */
-.practical-section{background:linear-gradient(135deg,#f4f8ff 0%,#fff 58%,#fff5f4 100%)}
-.practical-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 18px}
-.practical-card{background:#fff;border:1px solid #dfe5ec;border-radius:18px;padding:22px;box-shadow:0 10px 26px rgba(0,63,125,.06)}
-.practical-number{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:12px;background:#0055a4;color:#fff;font-weight:900;margin-bottom:12px}
-.practical-card:nth-child(2) .practical-number{background:#ef4135}
-.practical-card h3{font-size:18px;line-height:1.25;margin:0 0 9px;color:#003f7d}
-.practical-card p{font-size:14px;line-height:1.65;color:#475467;margin:0}
-.practical-note{background:#fff;border-left:4px solid #ef4135;border-radius:12px;padding:16px 18px;color:#475467;font-size:14px;line-height:1.65}
-.practical-cta{text-align:center;margin-top:22px}
-.plan .sub{line-height:1.5}
-.plan-difference{font-size:13px;line-height:1.5;color:#003f7d;background:#edf5ff;border-radius:10px;padding:10px 12px;margin:12px 0 4px;font-weight:700}
-.plan.featured{transform:translateY(-4px)}
-@media(max-width:760px){.practical-grid{grid-template-columns:1fr;gap:11px}.practical-card{padding:17px}.practical-card h3{font-size:17px}.plan.featured{transform:none}.practical-cta .cta{max-width:100%;white-space:normal}}
 </style>
-
 </head>
 
 <body>
 
 <div class="topbar">
-  🇫🇷 Material digital de apoio para estudar e revisar francês • Pagamento único
+  ✨ Condição especial por tempo limitado • Acesso digital imediato
 </div>
 
 <header class="hero">
   <div class="container">
+
     <div class="badges">
-      <span class="badge offer-badge">🇫🇷 UM JEITO MAIS VISUAL DE ESTUDAR FRANCÊS</span>
+      <span class="badge offer-badge">
+        <span class="stars-rating">★★★★★</span>
+        <span>+1.525 alunos</span>
+      </span>
     </div>
-    <h1><span>+100 MAPAS MENTAIS PARA APRENDER FRANCÊS</span><br>Entenda os conteúdos, organize a revisão e saiba por onde retomar seus estudos.</h1>
-    <p class="hero-subcopy">Um material visual para consultar os principais assuntos do francês sem precisar procurar suas anotações em vários lugares. Use para começar pelos fundamentos ou para revisar temas que você já estudou — no seu ritmo e junto da sua prática.</p>
-    <div class="hero-points">
-      <span>✓ Mais de 100 mapas mentais</span>
-      <span>✓ Conteúdos do A1 ao B2, conforme o material</span>
-      <span>✓ PDF para consultar ou imprimir</span>
-    </div>
-    <h2 class="hero-video-title">Assista à apresentação e veja o material por dentro</h2>
+
+    <h1>
+      <span>+100 Mapas Mentais</span><br>
+      para Aprender e Revisar Francês
+    </h1>
+
+    <p>
+      Estude francês com conteúdo visual, organizado e direto ao ponto.
+      Revise pelo celular, tablet ou computador e imprima quando quiser.
+    </p>
+
+    <h2 class="hero-video-title">
+      Assista o video abaixo:
+    </h2>
+
     <div class="hero-video">
-      <video controls playsinline preload="metadata" poster="thumbfrances.jpg" aria-label="Vídeo de apresentação do +100 Mapas Mentais para Aprender Francês">
-        <source src="francesvideo.mp4" type="video/mp4">
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        poster="thumbfrances.jpg"
+        aria-label="Vídeo de apresentação do +100 Mapas Mentais para Aprender Francês"
+      >
+        <source src="frances.mp4" type="video/mp4">
         Seu navegador não suporta a reprodução de vídeos.
       </video>
     </div>
-    <a class="cta" href="#oferta">Ver o conteúdo e comparar os planos ↓</a>
-    <div class="trust"><span>🔒 Pagamento seguro pelo checkout</span><span>⚡ Acesso digital após a confirmação</span><span>✓ Consulte a garantia do plano</span></div>
-    <p class="hero-note">Importante: este é um material de apoio e revisão. Ele não promete fluência sozinho e não substitui prática de leitura, escuta, escrita e conversação.</p>
+
+    <a class="cta" href="#oferta">
+      Quero Garantir Agora →
+    </a>
+
+    <div class="trust">
+      <span>🔒 Compra segura</span>
+      <span>⚡ Acesso imediato</span>
+      <span>✓ Garantia de 30 dias</span>
+    </div>
+
   </div>
 </header>
 
@@ -2114,10 +1642,13 @@ a{
       O material por dentro
     </div>
 
-    <h2>Veja o que você realmente vai receber</h2>
+    <h2>
+      Veja como é por dentro
+    </h2>
 
     <p class="section-lead">
-      Confira as páginas de exemplo antes de escolher. Os mapas reúnem conteúdos de francês em formato visual para facilitar a consulta, a retomada dos assuntos e a revisão.
+      Mapas visuais, organizados e prontos para revisar os principais assuntos
+      do francês em poucos minutos.
     </p>
 
     <div class="carousel" aria-label="Prévia dos mapas mentais">
@@ -2181,37 +1712,251 @@ a{
 </section>
 
 <!-- =========================
-     BENEFÍCIOS
+     QUEM USA
 ========================= -->
+
 <section class="section alt">
   <div class="container">
-    <div class="kicker">Por que mapas mentais?</div>
-    <h2>O problema não é só estudar. É conseguir retomar o conteúdo depois.</h2>
-    <p class="section-lead">Aulas, cadernos, vídeos e aplicativos podem deixar informações importantes espalhadas. A proposta deste material é reunir temas de francês em páginas visuais que você consegue abrir de novo quando precisar revisar — sem vender a ideia de que olhar um mapa, sozinho, ensina um idioma inteiro.</p>
-    <div class="audiences">
-      <article class="audience"><div class="icon">01</div><h3>Consulte o tema de uma vez</h3><p>Veja as informações reunidas em uma página visual, em vez de ter que reconstruir suas anotações toda vez que for revisar.</p></article>
-      <article class="audience"><div class="icon">02</div><h3>Retome de onde parou</h3><p>Volte ao mapa de um assunto que já estudou para relembrar os pontos principais antes de fazer exercícios ou praticar.</p></article>
-      <article class="audience"><div class="icon">03</div><h3>Complemente sua prática</h3><p>Use os mapas junto com aulas, exercícios, áudio, leitura e conversação. Eles organizam a consulta; a prática é o que transforma estudo em habilidade.</p></article>
-    </div>
-    <div style="text-align:center;margin-top:25px"><a class="cta" href="#oferta">Ver planos e conteúdos →</a></div>
-  </div>
-</section>
 
-<!-- =========================
-     COMO USAR NA PRÁTICA
-========================= -->
-<section class="section practical-section">
-  <div class="container">
-    <div class="kicker">Como usar no dia a dia</div>
-    <h2>Um jeito simples de transformar consulta em estudo</h2>
-    <p class="section-lead">O mapa é um ponto de partida para revisar, não um atalho mágico. Use-o em conjunto com prática ativa para aproveitar melhor o material.</p>
-    <div class="practical-grid">
-      <article class="practical-card"><span class="practical-number">01</span><h3>Escolha um único assunto</h3><p>Abra um mapa do tema que você está estudando ou que precisa relembrar. Evite tentar revisar tudo de uma vez.</p></article>
-      <article class="practical-card"><span class="practical-number">02</span><h3>Leia e tente recordar</h3><p>Observe o mapa, depois tente explicar com suas palavras o que entendeu ou recordar os exemplos sem olhar.</p></article>
-      <article class="practical-card"><span class="practical-number">03</span><h3>Pratique e volte depois</h3><p>Faça exercícios, leia ou escute francês relacionado ao tema. Retorne ao mapa quando precisar conferir ou revisar.</p></article>
+    <div class="kicker">
+      Quem usa
     </div>
-    <div class="practical-note"><strong>O que este produto entrega:</strong> um material visual de consulta e revisão. <strong>O que ele não promete:</strong> fluência automática, resultados iguais para todos ou substituição da prática do idioma.</div>
-    <div class="practical-cta"><a class="cta" href="#oferta">Comparar os planos e ver o que está incluído →</a></div>
+
+    <h2>
+      Um material para objetivos diferentes
+    </h2>
+
+    <p class="section-lead">
+      Aprender para viajar, estudar, trabalhar ou simplesmente finalmente
+      destravar o francês.
+    </p>
+
+    <div class="compact-carousel testimonials-carousel">
+
+      <div class="compact-carousel-track">
+
+        <!-- MARINA -->
+
+        <article class="testimonial compact-carousel-slide">
+
+          <div class="stars">
+           
+          </div>
+
+          <div class="testimonial-photo">
+            <img
+              src="depoimento1.jpg"
+              alt="Depoimento de Marina"
+            >
+          </div>
+
+          <div class="tag">
+            VIAGEM
+          </div>
+
+          <p>
+            “Eu precisava aprender o básico antes de viajar.
+            Os mapas me ajudaram a revisar vocabulário e frases importantes
+            sem precisar ficar horas estudando.”
+          </p>
+
+          <div class="reviewer-info">
+
+            <div class="reviewer-avatar">
+              <img
+                src="marina.jpg"
+                alt="Foto de perfil de Marina"
+              >
+            </div>
+
+            <div class="reviewer-details">
+
+              <div class="reviewer-name-row">
+
+                <span class="reviewer-name">
+                  Marina S.
+                </span>
+
+                <span class="reviewer-stars" aria-label="5 estrelas">
+                  ★★★★★
+                </span>
+
+              </div>
+
+              <div class="reviewer-role">
+                Viagem internacional
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- LUCAS -->
+
+        <article class="testimonial compact-carousel-slide">
+
+          <div class="stars">
+           
+          </div>
+
+          <div class="testimonial-photo">
+            <img
+              src="depoimento2.jpg"
+              alt="Depoimento de Lucas"
+            >
+          </div>
+
+          <div class="tag">
+            ESTUDOS
+          </div>
+
+          <p>
+            “O formato visual facilita muito a revisão.
+            Consigo bater o olho no mapa e lembrar rapidamente da estrutura
+            que estava estudando.”
+          </p>
+
+          <div class="reviewer-info">
+
+            <div class="reviewer-avatar">
+              <img
+                src="lucas.jpg"
+                alt="Foto de perfil de Lucas"
+              >
+            </div>
+
+            <div class="reviewer-details">
+
+              <div class="reviewer-name-row">
+
+                <span class="reviewer-name">
+                  Lucas R.
+                </span>
+
+                <span class="reviewer-stars" aria-label="5 estrelas">
+                  ★★★★★
+                </span>
+
+              </div>
+
+              <div class="reviewer-role">
+                Estudante
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- CAMILA -->
+
+        <article class="testimonial compact-carousel-slide">
+
+          <div class="stars">
+            
+          </div>
+
+          <div class="testimonial-photo">
+            <img
+              src="depoimento3.jpg"
+              alt="Depoimento de Camila"
+            >
+          </div>
+
+          <div class="tag">
+            PRATICIDADE
+          </div>
+
+          <p>
+            “Eu não conseguia manter uma rotina de estudos.
+            Com os mapas, consigo revisar um assunto em poucos minutos
+            quando tenho tempo.”
+          </p>
+
+          <div class="reviewer-info">
+
+            <div class="reviewer-avatar">
+              <img
+                src="camila.jpg"
+                alt="Foto de perfil de Camila"
+              >
+            </div>
+
+            <div class="reviewer-details">
+
+              <div class="reviewer-name-row">
+
+                <span class="reviewer-name">
+                  Camila F.
+                </span>
+
+                <span class="reviewer-stars" aria-label="5 estrelas">
+                  ★★★★★
+                </span>
+
+              </div>
+
+              <div class="reviewer-role">
+                Profissional
+              </div>
+
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <button
+        class="compact-carousel-btn prev"
+        type="button"
+        aria-label="Avaliação anterior"
+      >
+        ‹
+      </button>
+
+      <button
+        class="compact-carousel-btn next"
+        type="button"
+        aria-label="Próxima avaliação"
+      >
+        ›
+      </button>
+
+      <div class="compact-carousel-dots">
+
+        <button
+          class="compact-dot active"
+          type="button"
+          data-slide="0"
+        ></button>
+
+        <button
+          class="compact-dot"
+          type="button"
+          data-slide="1"
+        ></button>
+
+        <button
+          class="compact-dot"
+          type="button"
+          data-slide="2"
+        ></button>
+
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:25px">
+      <a class="cta" href="#oferta">
+        Quero Garantir Agora
+      </a>
+    </div>
+
   </div>
 </section>
 
@@ -2227,10 +1972,13 @@ a{
       Organização do kit
     </div>
 
-    <h2>Um panorama dos assuntos para você saber o que revisar</h2>
+    <h2>
+      O que você vai encontrar nos +100 mapas
+    </h2>
 
     <p class="section-lead">
-      O material está organizado por níveis e reúne temas de gramática, vocabulário e comunicação. Use esta lista para conferir se os assuntos fazem sentido para o ponto em que você está no francês.
+      Conteúdo organizado para levar você dos fundamentos até estruturas
+      mais avançadas, sem precisar estudar de forma desorganizada.
     </p>
 
     <div class="levels">
@@ -2309,10 +2057,13 @@ a{
       Para quem é?
     </div>
 
-    <h2>Um apoio visual para diferentes momentos do estudo</h2>
+    <h2>
+      Para quem foi feito este material?
+    </h2>
 
     <p class="section-lead">
-      Você pode estar começando, já fazer aulas ou ter parado de estudar e querer retomar. O material serve como apoio de consulta e revisão — não exige que você já domine o idioma.
+      Um guia visual para quem quer estudar francês com mais clareza,
+      praticidade e menos tempo perdido.
     </p>
 
     <div class="compact-carousel audiences-carousel">
@@ -2424,40 +2175,48 @@ a{
 
   <div class="container">
 
-    <div class="kicker">Antes de escolher
+    <div class="kicker">
+      Quebre suas objeções
     </div>
 
-    <h2>Veja se este material combina com o que você precisa</h2>
+    <h2>
+      Talvez você esteja pensando...
+    </h2>
 
     <div class="objections">
 
       <div class="objection">
         <strong>
-          “Tenho dificuldade para organizar tudo o que estudo.”
+          “Já tentei aprender francês antes e nunca consegui.”
         </strong>
 
         <p>
-          Os mapas oferecem uma forma visual de consultar os temas estudados. Eles podem ajudar na organização da revisão, mas o progresso também depende de prática regular e de um método adequado para você.
+          Talvez o problema tenha sido a forma de revisar.
+          Os mapas organizam visualmente conceitos que normalmente ficam
+          espalhados em textos e anotações.
         </p>
       </div>
 
       <div class="objection">
         <strong>
-          “Minha rotina é corrida.”
+          “Não tenho tempo para estudar todos os dias.”
         </strong>
 
         <p>
-          Você pode abrir um mapa quando tiver alguns minutos disponíveis. Não existe tempo mágico: escolha um tema, revise e, quando puder, complemente com exercícios ou prática do idioma.
+          Você pode usar os mapas para revisões rápidas,
+          aproveitando pequenos períodos livres ao longo do dia.
         </p>
       </div>
 
       <div class="objection">
         <strong>
-          “Isso vai me deixar fluente sem fazer mais nada?”
+          “Eu preciso de um curso completo.”
         </strong>
 
         <p>
-          Não. O produto é um material visual de apoio e revisão, não um curso completo com acompanhamento nem uma promessa de fluência. Para desenvolver o idioma, combine a consulta com escuta, leitura, escrita e conversação.
+          Os mapas foram pensados como um material de apoio e revisão.
+          Você pode utilizá-los junto com aulas, cursos, aplicativos
+          ou outros métodos.
         </p>
       </div>
 
@@ -2479,10 +2238,12 @@ a{
       Bônus exclusivos
     </div>
 
-    <h2>No Plano Completo, a revisão vem acompanhada de 5 materiais extras</h2>
+    <h2>
+      Você também recebe 5 bônus especiais
+    </h2>
 
     <p class="section-lead">
-      Cada bônus tem uma função diferente: leitura, frases úteis, organização da rotina, verbos e expressões do dia a dia. Veja as prévias e escolha o plano pelo tipo de apoio que você quer ter.
+      Aceleradores de estudo incluídos gratuitamente no Plano Completo.
     </p>
 
     <div class="compact-carousel bonus-carousel">
@@ -2713,7 +2474,9 @@ a{
 
 <section class="expert-section">
 
-  <h2 class="expert-title">Conheça a Prof. Grazi Leal</h2>
+  <h2 class="expert-title">
+    Conheça a Prof. Grazi Leal:
+  </h2>
 
   <div class="expert-photo-wrap">
 
@@ -2747,9 +2510,17 @@ a{
 
   <div class="container">
 
-    <div class="kicker">Escolha com clareza</div>
-    <h2>Escolha o nível de apoio que faz sentido para você</h2>
-    <p class="section-lead">O Plano Básico entrega os mapas mentais. O Plano Completo inclui os mesmos mapas mais cinco materiais complementares. Compare antes de comprar: pagamento único, sem mensalidade.</p>
+    <div class="kicker">
+      Escolha seu plano
+    </div>
+
+    <h2>
+      Comece hoje sua jornada no francês
+    </h2>
+
+    <p class="section-lead">
+      Pagamento único, acesso digital e sem mensalidade.
+    </p>
 
     <div class="pricing">
 
@@ -2761,9 +2532,13 @@ a{
           Plano Básico
         </h3>
 
-        <div class="sub">Para quem quer o material principal de consulta e revisão</div>
+        <div class="sub">
+          O essencial para começar
+        </div>
 
-        
+        <div class="old">
+          De R$ 34,90
+        </div>
 
         <div class="price">
           R$ 17,90
@@ -2780,7 +2555,7 @@ a{
           </li>
 
           <li>
-            Conteúdos organizados por níveis A1 a B2
+            Organizado do A1 ao B2
           </li>
 
           <li>
@@ -2796,7 +2571,7 @@ a{
           </li>
 
           <li class="no">
-            Acesso vitalício ao material e atualizações futuras, conforme oferta
+            Acesso vitalício com atualizações futuras
           </li>
 
         </ul>
@@ -2804,14 +2579,14 @@ a{
         <a
           class="cta"
           style="width:100%"
-          href="https://pay.pague.click/pay/f78aba29-0c73-4a4b-b951-3f82b65e63e5"
+          href="#upsell"
           id="basicCheckoutBtn"
         >
           Quero o Plano Básico
         </a>
 
         <div style="text-align:center;color:#777;font-size:12px;margin-top:10px">
-          Garantia de 7 dias, conforme as condições do checkout
+          Garantia de 7 dias
         </div>
 
       </article>
@@ -2821,24 +2596,27 @@ a{
       <article class="plan featured">
 
         <div class="ribbon">
-          MAPAS + 5 EXTRAS
+          MAIS ESCOLHIDO
         </div>
 
         <h3>
           Plano Completo
         </h3>
 
-        <div class="sub">Os mapas mentais + 5 materiais para apoiar outras partes do estudo</div>
-        <p class="plan-difference">Por R$ 15,00 a mais que o Básico, você inclui os cinco materiais complementares.</p>
+        <div class="sub">
+          Tudo para estudar e revisar com mais praticidade
+        </div>
 
-        
+        <div class="old">
+          De R$ 79,90
+        </div>
 
         <div class="price">
           R$ 32,90
         </div>
 
         <div class="payment">
-          Pagamento único · sem mensalidade
+          Pagamento único · acesso vitalício
         </div>
 
         <ul class="checks">
@@ -2848,7 +2626,7 @@ a{
           </li>
 
           <li>
-            Conteúdos organizados por níveis A1 a B2
+            Organizado do A1 ao B2
           </li>
 
           <li>
@@ -2880,7 +2658,7 @@ a{
           </li>
 
           <li>
-            Acesso vitalício ao material e atualizações futuras, conforme oferta
+            Acesso vitalício com atualizações futuras
           </li>
 
         </ul>
@@ -2895,7 +2673,7 @@ a{
         </a>
 
         <div style="text-align:center;color:#777;font-size:12px;margin-top:10px">
-          Garantia de 30 dias, conforme as condições do checkout
+          Garantia de 30 dias
         </div>
 
       </article>
@@ -2908,10 +2686,14 @@ a{
         ✓
       </div>
 
-      <h2 style="font-size:30px">Confira a garantia do seu plano</h2>
+      <h2 style="font-size:30px">
+        Risco Zero
+      </h2>
 
       <p style="color:var(--muted);max-width:650px;margin:auto">
-        O Plano Básico informa garantia de 7 dias e o Plano Completo, de 30 dias, conforme as condições do checkout. Leia as regras apresentadas na compra para entender como solicitar o reembolso.
+        Acesse o material e explore com calma. Se você não ficar satisfeito
+        dentro do prazo de garantia do seu plano, poderá solicitar o reembolso
+        conforme as condições da compra.
       </p>
 
     </div>
@@ -2932,7 +2714,9 @@ a{
       Entrega imediata
     </div>
 
-    <h2>Da compra ao primeiro estudo: como funciona</h2>
+    <h2>
+      Como você recebe o material?
+    </h2>
 
     <p class="section-lead">
       O envio é 100% digital e automático.
@@ -3006,7 +2790,9 @@ a{
       Dúvidas frequentes
     </div>
 
-    <h2>Tire suas dúvidas antes de comprar</h2>
+    <h2>
+      Perguntas frequentes
+    </h2>
 
     <div class="faq">
 
@@ -3113,6 +2899,82 @@ a{
 </section>
 
 <!-- =========================
+     MODAL UPSELL
+========================= -->
+
+<div
+  class="modal-backdrop"
+  id="upsell"
+  aria-hidden="true"
+>
+
+  <div
+    class="upsell-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="upsellTitle"
+  >
+
+    <button
+      class="modal-close"
+      type="button"
+      id="closeUpsell"
+      aria-label="Fechar"
+    >
+      ×
+    </button>
+
+    <div class="modal-kicker">
+      OFERTA ESPECIAL
+    </div>
+
+    <h2 id="upsellTitle">
+      Espere! Você pode levar o Plano Completo por apenas R$ 25,90
+    </h2>
+
+    <p>
+      Antes de continuar com o Plano Básico, aproveite esta condição especial
+      para ter os +100 Mapas Mentais, os 5 bônus e todos os benefícios do
+      Plano Completo por um valor reduzido.
+    </p>
+
+    <div class="upsell-price">
+
+      <span>
+        Condição especial
+      </span>
+
+      <strong>
+        R$ 25,90
+      </strong>
+
+      <small>
+        pagamento único
+      </small>
+
+    </div>
+
+    <a
+      class="cta modal-cta"
+      href="https://pay.pague.click/pay/d60ff9d1-ead4-4c30-b674-e8c62295fe5c"
+      id="upsellAccept"
+    >
+      Sim, quero por R$ 25,90 →
+    </a>
+
+    <button
+      class="continue-basic"
+      type="button"
+      id="continueBasic"
+    >
+      Não, continuar com o Plano Básico por R$ 17,90
+    </button>
+
+  </div>
+
+</div>
+
+<!-- =========================
      FINAL
 ========================= -->
 
@@ -3120,12 +2982,22 @@ a{
 
   <div class="container">
 
-    <div class="urgency">SEU PRÓXIMO PASSO NO FRANCÊS</div>
-    <h2>Deixe seus estudos de francês mais fáceis de retomar</h2>
-    <p>Veja as páginas de exemplo, compare o Plano Básico com o Completo e escolha o material que faz sentido para a sua rotina. Use os mapas para consultar e revisar — e continue praticando o francês além deles.</p>
+    <div class="urgency">
+      🔥 CONDIÇÃO ESPECIAL POR TEMPO LIMITADO
+    </div>
+
+    <h2>
+      Garanta seu acesso agora<br>
+      pelo valor especial
+    </h2>
+
+    <p>
+      Comece a organizar seu estudo de francês com +100 Mapas Mentais
+      e tenha um material visual para revisar sempre que precisar.
+    </p>
 
     <a class="cta" href="#oferta">
-      Comparar os planos →
+      Quero Adquirir Agora →
     </a>
 
     <div style="margin-top:18px;font-size:12px;color:#cbbeca">
@@ -3155,6 +3027,43 @@ a{
 
 </footer>
 
+<!-- =========================
+     NOTIFICAÇÃO DEMONSTRATIVA
+========================= -->
+
+<div
+  class="live-notification"
+  id="liveNotification"
+  aria-live="polite"
+>
+
+  <div class="live-notification-main">
+
+    <span>
+      ✅
+    </span>
+
+    <span>
+      <strong id="notificationName">
+        Lia
+      </strong>
+
+      <span id="notificationAction">
+        de João Pessoa garantiu o Plano Básico!
+      </span>
+    </span>
+
+  </div>
+
+  <div
+    class="live-notification-time"
+    id="notificationTime"
+  >
+    Há 3 minutos
+  </div>
+
+</div>
+
 <script>
 (function(){
 
@@ -3169,6 +3078,7 @@ a{
   const mainNext = document.querySelector('.carousel-btn.next');
 
   let mainCurrent = 0;
+  let mainTimer;
 
   function goToMain(index){
 
@@ -3187,13 +3097,24 @@ a{
 
   }
 
+  function restartMain(){
+
+    clearInterval(mainTimer);
+
+    mainTimer = setInterval(()=>{
+      goToMain(mainCurrent + 1);
+    },2000);
+
+  }
 
   mainNext.addEventListener('click',()=>{
     goToMain(mainCurrent + 1);
+    restartMain();
   });
 
   mainPrev.addEventListener('click',()=>{
     goToMain(mainCurrent - 1);
+    restartMain();
   });
 
   mainDots.forEach(dot => {
@@ -3204,11 +3125,13 @@ a{
         Number(dot.dataset.slide)
       );
 
-  
+      restartMain();
+
     });
 
   });
 
+  restartMain();
 
 
   /* =========================================
@@ -3299,13 +3222,241 @@ a{
     });
 
 
+  /* =========================================
+     MODAL UPSELL
+  ========================================= */
+
+  const modal =
+    document.getElementById('upsell');
+
+  const basicBtn =
+    document.getElementById(
+      'basicCheckoutBtn'
+    );
+
+  const closeBtn =
+    document.getElementById(
+      'closeUpsell'
+    );
+
+  const continueBasic =
+    document.getElementById(
+      'continueBasic'
+    );
+
+
+  function openModal(e){
+
+    e.preventDefault();
+
+    modal.classList.add('open');
+
+    modal.setAttribute(
+      'aria-hidden',
+      'false'
+    );
+
+    document.body.style.overflow =
+      'hidden';
+
+    document.body.classList.add(
+      'modal-open'
+    );
+
+  }
+
+
+  function closeModal(){
+
+    modal.classList.remove('open');
+
+    modal.setAttribute(
+      'aria-hidden',
+      'true'
+    );
+
+    document.body.style.overflow =
+      '';
+
+    document.body.classList.remove(
+      'modal-open'
+    );
+
+  }
+
+
+  basicBtn.addEventListener(
+    'click',
+    openModal
+  );
+
+  closeBtn.addEventListener(
+    'click',
+    closeModal
+  );
+
+
+  continueBasic.addEventListener(
+    'click',
+    ()=>{
+      window.location.href =
+        'https://pay.pague.click/pay/f78aba29-0c73-4a4b-b951-3f82b65e63e5';
+    }
+  );
+
+
+  modal.addEventListener(
+    'click',
+    (e)=>{
+      if(e.target === modal){
+        closeModal();
+      }
+    }
+  );
+
+
+  /* =========================================
+     NOTIFICAÇÕES DEMONSTRATIVAS
+  ========================================= */
+
+  const notificationData = [
+
+    {
+      name:"Lia",
+      city:"João Pessoa",
+      plan:"Plano Básico",
+      time:"Há 3 minutos"
+    },
+
+    {
+      name:"Ana",
+      city:"Recife",
+      plan:"Plano Completo",
+      time:"Há 5 minutos"
+    },
+
+    {
+      name:"Bia",
+      city:"Curitiba",
+      plan:"Plano Básico",
+      time:"Há 7 minutos"
+    },
+
+    {
+      name:"Lúcia",
+      city:"Salvador",
+      plan:"Plano Completo",
+      time:"Há 9 minutos"
+    },
+
+    {
+      name:"Clara",
+      city:"Campinas",
+      plan:"Plano Básico",
+      time:"Há 11 minutos"
+    },
+
+    {
+      name:"Nina",
+      city:"Fortaleza",
+      plan:"Plano Completo",
+      time:"Há 13 minutos"
+    },
+
+    {
+      name:"Eva",
+      city:"Natal",
+      plan:"Plano Básico",
+      time:"Há 15 minutos"
+    },
+
+    {
+      name:"Lara",
+      city:"Recife",
+      plan:"Plano Completo",
+      time:"Há 17 minutos"
+    }
+
+  ];
+
+
+  const liveNotification =
+    document.getElementById(
+      "liveNotification"
+    );
+
+  const notificationName =
+    document.getElementById(
+      "notificationName"
+    );
+
+  const notificationAction =
+    document.getElementById(
+      "notificationAction"
+    );
+
+  const notificationTime =
+    document.getElementById(
+      "notificationTime"
+    );
+
+  let notificationIndex = 0;
+
+
+  function showNotification(){
+
+    const item =
+      notificationData[
+        notificationIndex
+      ];
+
+    notificationName.textContent =
+      item.name;
+
+    notificationAction.textContent =
+      " de " +
+      item.city +
+      " garantiu o " +
+      item.plan +
+      "!";
+
+    notificationTime.textContent =
+      item.time;
+
+    liveNotification.classList.add(
+      "show"
+    );
+
+
+    setTimeout(()=>{
+
+      liveNotification.classList.remove(
+        "show"
+      );
+
+
+      setTimeout(()=>{
+
+        notificationIndex =
+          (notificationIndex + 1) %
+          notificationData.length;
+
+        showNotification();
+
+      },4000);
+
+    },6000);
+
+  }
+
+
+  setTimeout(
+    showNotification,
+    2000
+  );
 
 })();
 </script>
-
-
-<div class="mobile-offer-bar"><span><strong>+100 Mapas Mentais para Francês</strong><small>Compare os planos</small></span><a href="#oferta">Ver oferta ↓</a></div>
-<style>.mobile-offer-bar{display:none}@media(max-width:600px){.mobile-offer-bar{position:fixed;z-index:9997;bottom:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid #dfe5ec;box-shadow:0 -5px 22px rgba(16,24,40,.10)}.mobile-offer-bar span{display:flex;flex-direction:column;font-size:12px;line-height:1.25}.mobile-offer-bar small{color:#667085;margin-top:3px}.mobile-offer-bar a{background:#ef4135;color:#fff;font-weight:900;padding:11px 15px;border-radius:11px;font-size:13px}body{padding-bottom:75px}}</style>
 
 </body>
 </html>
